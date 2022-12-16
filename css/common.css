@@ -116,17 +116,17 @@ header .header-container nav ul li a {
   color: #fff;
   transition: 0.5;
 }
-header .header-container nav ul li.companyli:hover > a {
+header .header-container nav ul li.companyli:hover, header .header-container nav ul li.active > a {
   color: #faa61a;
 }
 header .header-container nav ul li.companyli:hover .company {
   height: 230px;
   padding: 18px 30px;
 }
-header .header-container nav ul li.serviceli:hover > a {
+header .header-container nav ul li.serviceli:hover, header .header-container nav ul li.serviceli.active > a {
   color: #faa61a;
 }
-header .header-container nav ul li.employli:hover > a {
+header .header-container nav ul li.employli:hover, header .header-container nav ul li.employli.active > a {
   color: #faa61a;
 }
 header .header-container nav ul li.employli:hover .employ {

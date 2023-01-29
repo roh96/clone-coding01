@@ -1,8 +1,133 @@
 @import "./common.scss";
 
 main {
-  div.intro-container {
+  .intro-container {
     width: 100%;
-    padding-top: 140px;
+    padding-top: 210px;
+    .intro-content {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding-bottom: 83px;
+      .abox {
+        div {
+          display: inline-block;
+        }
+        .first {
+          font-size: 14px;
+        }
+        .first:after {
+          font-family: "xeicon";
+          display: inline-block;
+          content: "\e93f";
+          position: relative;
+          top: -1px;
+          vertical-align: middle;
+          margin: 0px 7px 0 5px;
+          color: #222;
+          font-size: 18px;
+        }
+        .second {
+          font-size: 14px;
+        }
+        .second:after {
+          font-family: "xeicon";
+          display: inline-block;
+          content: "\e93f";
+          position: relative;
+          top: -1px;
+          vertical-align: middle;
+          margin: 0px 7px 0 5px;
+          color: #222;
+          font-size: 18px;
+        }
+      }
+      h3 {
+        padding-top: 57px;
+        font-size: 50px;
+        font-weight: 700;
+        p {
+          span {
+            font-weight: 100;
+            em {
+              font-weight: 700;
+              font-style: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+  .intro-menu-container {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    .intro-menu-content {
+      max-width: 1320px;
+      margin: 0 auto;
+      ul {
+        width: 100%;
+        display: flex;
+        li {
+          padding: 13px 0 15px;
+          color: #ccc;
+          padding-right: 70px;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .first-intro-container {
+    width: 100%;
+    .first-top-intro-content {
+      max-width: 1320px;
+      padding-top: 100px;
+      margin: 0 auto;
+      text-align: center;
+      h4 {
+        font-size: 56px;
+        padding-bottom: 28px;
+      }
+      span {
+        font-size: 24px;
+        color: #222;
+        em {
+          color: #faa61a;
+          font-style: normal;
+        }
+      }
+    }
+    .first-bot-intro-content {
+      padding-top: 60px;
+      max-width: 1520px;
+      margin: 0 auto;
+      > div {
+        border-bottom-right-radius: 100px;
+        overflow: hidden;
+      }
+      > span {
+        display: block;
+        text-align: center;
+        color: #222;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 1.6;
+        em {
+          color: #faa61a;
+          font-style: normal;
+        }
+      }
+      .fbic-toptxt {
+        padding-top: 55px;
+      }
+    }
+    &:after {
+      content: "";
+      display: block;
+      margin: 68px auto 79px;
+      width: 1px;
+      height: 65px;
+      background-color: #e5e5e5;
+    }
   }
 }

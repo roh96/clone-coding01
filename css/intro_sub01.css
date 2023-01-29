@@ -711,7 +711,127 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     border-top: 1px solid #fff;
   }
 }
-main div.intro-container {
+main .intro-container {
   width: 100%;
-  padding-top: 140px;
+  padding-top: 210px;
+}
+main .intro-container .intro-content {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-bottom: 83px;
+}
+main .intro-container .intro-content .abox div {
+  display: inline-block;
+}
+main .intro-container .intro-content .abox .first {
+  font-size: 14px;
+}
+main .intro-container .intro-content .abox .first:after {
+  font-family: "xeicon";
+  display: inline-block;
+  content: "\e93f";
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+  margin: 0px 7px 0 5px;
+  color: #222;
+  font-size: 18px;
+}
+main .intro-container .intro-content .abox .second {
+  font-size: 14px;
+}
+main .intro-container .intro-content .abox .second:after {
+  font-family: "xeicon";
+  display: inline-block;
+  content: "\e93f";
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+  margin: 0px 7px 0 5px;
+  color: #222;
+  font-size: 18px;
+}
+main .intro-container .intro-content h3 {
+  padding-top: 57px;
+  font-size: 50px;
+  font-weight: 700;
+}
+main .intro-container .intro-content h3 p span {
+  font-weight: 100;
+}
+main .intro-container .intro-content h3 p span em {
+  font-weight: 700;
+  font-style: normal;
+}
+main .intro-menu-container {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+main .intro-menu-container .intro-menu-content {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+main .intro-menu-container .intro-menu-content ul {
+  width: 100%;
+  display: flex;
+}
+main .intro-menu-container .intro-menu-content ul li {
+  padding: 13px 0 15px;
+  color: #ccc;
+  padding-right: 70px;
+  font-size: 20px;
+  font-weight: 700;
+}
+main .first-intro-container {
+  width: 100%;
+}
+main .first-intro-container .first-top-intro-content {
+  max-width: 1320px;
+  padding-top: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+main .first-intro-container .first-top-intro-content h4 {
+  font-size: 56px;
+  padding-bottom: 28px;
+}
+main .first-intro-container .first-top-intro-content span {
+  font-size: 24px;
+  color: #222;
+}
+main .first-intro-container .first-top-intro-content span em {
+  color: #faa61a;
+  font-style: normal;
+}
+main .first-intro-container .first-bot-intro-content {
+  padding-top: 60px;
+  max-width: 1520px;
+  margin: 0 auto;
+}
+main .first-intro-container .first-bot-intro-content > div {
+  border-bottom-right-radius: 100px;
+  overflow: hidden;
+}
+main .first-intro-container .first-bot-intro-content > span {
+  display: block;
+  text-align: center;
+  color: #222;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+main .first-intro-container .first-bot-intro-content > span em {
+  color: #faa61a;
+  font-style: normal;
+}
+main .first-intro-container .first-bot-intro-content .fbic-toptxt {
+  padding-top: 55px;
+}
+main .first-intro-container:after {
+  content: "";
+  display: block;
+  margin: 68px auto 79px;
+  width: 1px;
+  height: 65px;
+  background-color: #e5e5e5;
 }/*# sourceMappingURL=intro_sub01.css.map */

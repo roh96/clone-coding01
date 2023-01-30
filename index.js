@@ -2,7 +2,7 @@ $("body").prepend("<header>");
 $("body").append("<footer>");
 
 $("header").load("./inc.html header>div", head);
-$("footer").load("./inc.html footer>div");
+$("footer").load("./inc.html footer>div", up);
 
 let idx = localStorage.idx || 0;
 let preIdx = 0;
@@ -78,3 +78,9 @@ function fades() {
 }
 
 fades();
+
+function up() {
+  $(".up-tool").click(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}

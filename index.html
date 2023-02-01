@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hecto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script defer src="./index.js"></script>
-    <script defer src="./inc.js"></script>
 </head>
 
 <body>
@@ -244,9 +245,9 @@
                 <h2 class="moveHide"><em>미디어 속</em> 새소식</h2>
                 <div class="clicknews moveHide">보도자료</div>
                 <div class="clicknews moveHide">언론기사</div>
-                <div class="libox">
-                    <ul>
-                        <li>
+                <div class="libox swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
                             <a href="#">
                                 <div class="moveHide">
                                     <p class="date">2022-07-20</p>
@@ -259,7 +260,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="swiper-slide">
                             <a href="#">
                                 <div class="moveHide">
                                     <p class="date">2022-06-13</p>
@@ -271,12 +272,53 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="swiper-slide">
                             <a href="#">
                                 <div class="moveHide">
                                     <p class="date">2022-04-22</p>
                                     <strong>[이데일리] 시승 플랫폼 '티오르', 유카 직영 중고차 추가</strong>
-                                    <p class="txt">시승 플랫폼 티오르(TIOR)는 직영 중고차 업체 유카와 업무 제휴를 체결했다고 22일 밝혔다. 이번 제휴를 통해 티오...
+                                    <p class="txt">시승 플랫폼 티오르(TIOR)는 직영 중고차 업체 유카와 업무 제휴를 체결했다고 22일 밝혔다. 이번 제휴를 통해
+                                        티오...
+                                    </p>
+                                    <span>MORE VIEW
+                                        <div class="xi-plus-min"></div>
+                                        </span=>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="moveHide">
+                                    <p class="date">2022-07-20</p>
+                                    <strong>[테크M] "내 카드 혜택금은 얼마?" 헥토이노베이션 '더쎈카드' 카드 혜택률 진단...
+                                    </strong>
+                                    <p class="txt">마이데이터 기업 헥토이노베이션은 '더쎈카드' 론칭 한 달간의 고객 데이터 분석 결과를 20일 공개했다....</p>
+                                    <span>MORE VIEW
+                                        <div class="xi-plus-min"></div>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="moveHide">
+                                    <p class="date">2022-06-13</p>
+                                    <strong>[아시아경제] 민앤지, 국내 유일 카드실적 예측 마이데이터 서비스 '더쎈카드' 론칭</strong>
+                                    <p class="txt">마이데이터 기업 민앤지(대표 이현철)가 국내 최초로 카드 실적과 혜택을 관리할 수 있는 마이데이터 서비스...</p>
+                                    <span>MORE VIEW
+                                        <div class="xi-plus-min"></div>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="moveHide">
+                                    <p class="date">2022-04-22</p>
+                                    <strong>[이데일리] 시승 플랫폼 '티오르', 유카 직영 중고차 추가</strong>
+                                    <p class="txt">시승 플랫폼 티오르(TIOR)는 직영 중고차 업체 유카와 업무 제휴를 체결했다고 22일 밝혔다. 이번 제휴를 통해
+                                        티오...
                                     </p>
                                     <span>MORE VIEW
                                         <div class="xi-plus-min"></div>
@@ -317,6 +359,7 @@
                 </div>
             </div>
         </div>
+
     </main>
 
 

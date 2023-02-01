@@ -4,10 +4,10 @@ $("body").append("<footer>");
 $("header").load("./inc.html header>div", head);
 $("footer").load("./inc.html footer>div", up);
 
-//헤더메뉴 불들어오기
 let idx = localStorage.idx || 0;
 let preIdx = 0;
 function head() {
+  //헤더메뉴 불들어오기
   //$("header a").eq(idx).css("color", "blue");
   $("header > div > div > nav > ul > li").click(function () {
     let idx = $(this).index();
@@ -27,7 +27,6 @@ const elIconhide = document.querySelectorAll(".iconHide");
 //const elOpening = document.querySelectorAll(".opening-txt");
 
 window.addEventListener("scroll", contents);
-window.addEventListener("scroll", toolBox);
 function contents() {
   elMove.forEach(function (cont, key) {
     if (
@@ -56,44 +55,29 @@ function contents() {
       }, 200 * key);
     }
   });
-  /*elOpening.forEach(function (cont, key) {
-    setTimeout(function () {
-      cont.classList.add("openingUp");
-    }, 300 * key);
-  });*/
 }
 contents();
 
 $(".mainanime-container div").not(":first").hide();
 //메인 첫비쥬얼 페이드
-let num = 0;
-function fade() {
-  $(".mainanime-container div").eq(num).fadeOut(2000);
-  num++;
-  if ($(".mainanime-container div").length == num) num = 0;
-  $(".mainanime-container div").eq(num).fadeIn(1000);
-}
-let fadeInterval;
 function fades() {
-  clearInterval(fadeInterval);
+  let num = 0,
+    fadeInterval;
+
   fadeInterval = setInterval(function () {
-    fade();
+    $(".mainanime-container div").eq(num).fadeOut(2000);
+    num++;
+    //setTimeout(2000);
+    if ($(".mainanime-container div").length == num) num = 0;
+    $(".mainanime-container div").eq(num).fadeIn(1000);
+    console.log(num);
   }, 4000);
 }
 
 fades();
 
-//news-container swipe
 function init() {
   var swiper = new Swiper(".libox", {
-    /*slidesPerView: 3,
-      spaceBetween: 30,
-      slidesPerGroup: 3,*/
-
-    /*autoplay: {
-      delay: 2500,
-      disabledOnInteraction: false,
-    },*/
     breakpoints: {
       360: {
         slidesPerView: 3,
@@ -103,14 +87,9 @@ function init() {
         slidesPerView: 3,
         spaceBetween: 40,
         loop: true,
-        //loopFillGroupWithBlank: true,
         pagination: {
           el: ".swiper-pagination",
         },
-        /*navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },*/
       },
       1261: {
         slidesPerView: 3,
@@ -121,9 +100,6 @@ function init() {
     on: {
       slideChange: function (e) {
         const elActive = document.querySelector(".swiper-slide-active");
-        //if (elActive) elActive.style = `color:red`;
-
-        //console.log(e.activeIndex, e.realIndex);
       },
     },
   });
@@ -139,15 +115,13 @@ const elIntrocont = document.querySelector(".introduce-container");
 const elMaincont2 = document.querySelectorAll(
   ".main-container, .introduce-container"
 );
-//console.log(elIntrocont.getBoundingClientRect().top);
+
 let offset = [];
 let pos = { y: 0, y2: 0, state: true };
 let move = 0;
 let timeOut, inter;
 offset.push(elMaincont.offsetTop);
 offset.push(elIntrocont.offsetTop);
-
-//elMain.style = `height:${elSec.offsetHeight}px`;
 
 let scrollTop = true;
 let scrollBot = true;
@@ -185,7 +159,6 @@ window.addEventListener("mousewheel", function () {
 });
 
 let fadeFir = true;
-//let fadeSec = true;
 //첫화면 클릭버튼
 const btn = document.querySelectorAll(".arrow-box");
 btn.forEach(function (btn, key) {
@@ -197,27 +170,7 @@ btn.forEach(function (btn, key) {
       } else {
         fade();
       }
-
-      /*clearTimeout(btntime);
-      btntime = setTimeout(function () {
-        $(".mainanime-container div").eq(key).fadeOut(2000);
-        key++;
-        $(".mainanime-container div").eq(key).fadeIn(1000);
-      }, 2000);*/
-
-      /*clearTimeout(btntime);
-      setTimeout(function () {
-        btntime = $(".mainanime-container div").eq(key).fadeOut(2000);
-        key--;
-        $(".mainanime-container div").eq(key).fadeIn(1000);
-      }, 2000);*/
     }
-    /*fadeInterval = setInterval(function () {
-      $(".mainanime-container div").eq(key).fadeOut(2000);
-      num++;
-      if ($(".mainanime-container div").length == num) num = 0;
-      $(".mainanime-container div").eq(key).fadeIn(1000);
-    }, 4000);*/
   };
   fadeFir = true;
 });
@@ -229,18 +182,6 @@ function toolBox() {
     $("footer > div").eq(1).removeClass("on");
   }
 }
-
-//페이지 최상단으로
-$("footer > div")
-  .eq(1)
-  .on("click", function () {
-    $("html,body").animate(
-      {
-        scrollTop: 0,
-      },
-      { queue: false, duration: 1000 }
-    );
-  });
 
 //up버튼
 function up() {

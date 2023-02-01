@@ -116,7 +116,7 @@ header .header-container nav ul li a {
   color: #fff;
   transition: 0.5;
 }
-header .header-container nav ul li.companyli:hover, header .header-container nav ul li.active > a {
+header .header-container nav ul li.companyli:hover, header .header-container nav ul li.companyli.active > a {
   color: #faa61a;
 }
 header .header-container nav ul li.companyli:hover .company {
@@ -730,6 +730,10 @@ main .intro-container .intro-content .abox div {
 }
 main .intro-container .intro-content .abox .first {
   font-size: 14px;
+}
+main .intro-container .intro-content .abox .first:before {
+  font-family: "xeicon";
+  content: "\e900";
 }
 main .intro-container .intro-content .abox .first:after {
   font-family: "xeicon";

@@ -15,6 +15,10 @@ main {
         .first {
           font-size: 14px;
         }
+        .first:before {
+          font-family: "xeicon";
+          content: "\e900";
+        }
         .first:after {
           font-family: "xeicon";
           display: inline-block;

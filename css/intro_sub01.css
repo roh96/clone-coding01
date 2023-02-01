@@ -324,13 +324,18 @@ footer > div.footer-container > div.right-container > div.right-bottom-container
   display: block;
 }
 footer > div.up-tool {
-  position: fixed;
+  position: absolute;
   width: 46px;
   height: 46px;
   border-radius: 50%;
   background-color: #fff;
-  top: 94%;
+  top: 100%;
   right: 0.7%;
+}
+footer > div.up-tool.on {
+  position: fixed;
+  top: 94%;
+  transition: 1s;
 }
 footer > div.up-tool > div.xi-arrow-up {
   position: absolute;

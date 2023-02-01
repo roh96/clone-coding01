@@ -114,7 +114,7 @@ header {
             transition: 0.5;
           }
           &.companyli:hover,
-          &.active > a {
+          &.companyli.active > a {
             color: #faa61a;
           }
           &.companyli:hover .company {
@@ -333,14 +333,18 @@ footer {
     }
   }
   > div.up-tool {
-    position: fixed;
+    position: absolute;
     width: 46px;
     height: 46px;
     border-radius: 50%;
     background-color: #fff;
-    top: 94%;
+    top: 100%;
     right: 0.7%;
-
+    &.on {
+      position: fixed;
+      top: 94%;
+      transition: 1s;
+    }
     > div.xi-arrow-up {
       position: absolute;
       top: 35%;

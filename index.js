@@ -231,16 +231,16 @@ function toolBox() {
 }
 
 //페이지 최상단으로
-$("footer > div")
-  .eq(1)
-  .on("click", function () {
-    $("html,body").animate(
-      {
-        scrollTop: 0,
-      },
-      { queue: false, duration: 1000 }
-    );
-  });
+// $("footer > div")
+//   .eq(1)
+//   .on("click", function () {
+//     $("html,body").animate(
+//       {
+//         scrollTop: 0,
+//       },
+//       { queue: false, duration: 1000 }
+//     );
+//   });
 
 //up버튼
 function up() {

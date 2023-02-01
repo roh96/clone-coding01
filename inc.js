@@ -4,7 +4,8 @@
 // function contents() {
 //   window.scrollTo({ top: 0, behavior: "smooth" });
 // }
-$(".up-tool").click(() => {
-  alert("dd");
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
+
+// $(".up-tool").click(() => {
+//   alert("dd");
+//   window.scrollTo({ top: 0, behavior: "smooth" });
+// });

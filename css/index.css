@@ -116,7 +116,7 @@ header .header-container nav ul li a {
   color: #fff;
   transition: 0.5;
 }
-header .header-container nav ul li.companyli:hover, header .header-container nav ul li.active > a {
+header .header-container nav ul li.companyli:hover, header .header-container nav ul li.companyli.active > a {
   color: #faa61a;
 }
 header .header-container nav ul li.companyli:hover .company {

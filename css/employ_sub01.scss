@@ -1,0 +1,113 @@
+@import "./common.scss";
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.intro-container {
+  width: 100%;
+  padding-top: 210px;
+  .intro-content {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 83px;
+    .abox {
+      div {
+        display: inline-block;
+      }
+      .first {
+        font-size: 14px;
+      }
+      .first:before {
+        font-family: "xeicon";
+        content: "\e900";
+      }
+      .first:after {
+        font-family: "xeicon";
+        display: inline-block;
+        content: "\e93f";
+        position: relative;
+        top: -1px;
+        vertical-align: middle;
+        margin: 0px 7px 0 5px;
+        color: #222;
+        font-size: 18px;
+      }
+      .second {
+        font-size: 14px;
+      }
+      .second:after {
+        font-family: "xeicon";
+        display: inline-block;
+        content: "\e93f";
+        position: relative;
+        top: -1px;
+        vertical-align: middle;
+        margin: 0px 7px 0 5px;
+        color: #222;
+        font-size: 18px;
+      }
+    }
+    h3 {
+      padding-top: 57px;
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 1.36;
+      letter-spacing: -0.02rem;
+      color: #222;
+      p {
+        span {
+          font-weight: 100;
+          em {
+            font-weight: 700;
+            font-style: normal;
+          }
+        }
+      }
+    }
+  }
+  .intro-menu-container {
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    .intro-menu-content {
+      max-width: 1320px;
+      margin: 0 auto;
+      ul {
+        width: 100%;
+        display: flex;
+        li {
+          color: #ccc;
+          padding-right: 70px;
+          font-size: 20px;
+          font-weight: 700;
+          a {
+            display: block;
+            height: 100%;
+            padding: 13px 0 15px;
+            color: #ccc;
+            position: relative;
+            &::after {
+              transition: 0.5s;
+              content: "";
+              width: 0%;
+              left: 0;
+              bottom: -1px;
+              border-bottom: 1px solid #faa61a;
+              position: absolute;
+              z-index: 99;
+              // top: 50%;
+              // left: 50%;
+              // transform: translate(-50%, -50%);
+            }
+            &:hover {
+              color: #faa61a;
+              &::after {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

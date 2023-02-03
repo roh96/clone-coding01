@@ -721,26 +721,26 @@ body {
   padding: 0;
 }
 
-.intro-container {
+main .intro-container {
   width: 100%;
   padding-top: 210px;
 }
-.intro-container .intro-content {
+main .intro-container .intro-content {
   max-width: 1320px;
   margin: 0 auto;
   padding-bottom: 83px;
 }
-.intro-container .intro-content .abox div {
+main .intro-container .intro-content .abox div {
   display: inline-block;
 }
-.intro-container .intro-content .abox .first {
+main .intro-container .intro-content .abox .first {
   font-size: 14px;
 }
-.intro-container .intro-content .abox .first:before {
+main .intro-container .intro-content .abox .first:before {
   font-family: "xeicon";
   content: "\e900";
 }
-.intro-container .intro-content .abox .first:after {
+main .intro-container .intro-content .abox .first:after {
   font-family: "xeicon";
   display: inline-block;
   content: "\e93f";
@@ -751,10 +751,10 @@ body {
   color: #222;
   font-size: 18px;
 }
-.intro-container .intro-content .abox .second {
+main .intro-container .intro-content .abox .second {
   font-size: 14px;
 }
-.intro-container .intro-content .abox .second:after {
+main .intro-container .intro-content .abox .second:after {
   font-family: "xeicon";
   display: inline-block;
   content: "\e93f";
@@ -765,7 +765,7 @@ body {
   color: #222;
   font-size: 18px;
 }
-.intro-container .intro-content h3 {
+main .intro-container .intro-content h3 {
   padding-top: 57px;
   font-size: 50px;
   font-weight: 700;
@@ -773,39 +773,39 @@ body {
   letter-spacing: -0.02rem;
   color: #222;
 }
-.intro-container .intro-content h3 p span {
+main .intro-container .intro-content h3 p span {
   font-weight: 100;
 }
-.intro-container .intro-content h3 p span em {
+main .intro-container .intro-content h3 p span em {
   font-weight: 700;
   font-style: normal;
 }
-.intro-container .intro-menu-container {
+main .intro-menu-container {
   width: 100%;
   border-bottom: 1px solid #e5e5e5;
 }
-.intro-container .intro-menu-container .intro-menu-content {
+main .intro-menu-container .intro-menu-content {
   max-width: 1320px;
   margin: 0 auto;
 }
-.intro-container .intro-menu-container .intro-menu-content ul {
+main .intro-menu-container .intro-menu-content ul {
   width: 100%;
   display: flex;
 }
-.intro-container .intro-menu-container .intro-menu-content ul li {
+main .intro-menu-container .intro-menu-content ul li {
   color: #ccc;
   padding-right: 70px;
   font-size: 20px;
   font-weight: 700;
 }
-.intro-container .intro-menu-container .intro-menu-content ul li a {
+main .intro-menu-container .intro-menu-content ul li a {
   display: block;
   height: 100%;
   padding: 13px 0 15px;
   color: #ccc;
   position: relative;
 }
-.intro-container .intro-menu-container .intro-menu-content ul li a::after {
+main .intro-menu-container .intro-menu-content ul li a::after {
   transition: 0.5s;
   content: "";
   width: 0%;
@@ -815,9 +815,295 @@ body {
   position: absolute;
   z-index: 99;
 }
-.intro-container .intro-menu-container .intro-menu-content ul li a:hover {
+main .intro-menu-container .intro-menu-content ul li a:hover {
   color: #faa61a;
 }
-.intro-container .intro-menu-container .intro-menu-content ul li a:hover::after {
+main .intro-menu-container .intro-menu-content ul li a:hover::after {
   width: 100%;
+}
+main > .intro-h-container {
+  width: 100%;
+  padding-top: 100px;
+}
+main > .intro-h-container > .intro-h-content {
+  max-width: 1320px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #e5e5e5;
+}
+main > .intro-h-container > .intro-h-content h4 {
+  font-size: 56px;
+  letter-spacing: -0.00892em;
+  line-height: 1.2;
+}
+main > .intro-h-container > .intro-h-content p {
+  padding-top: 28px;
+  font-size: 24px;
+  letter-spacing: -0.035em;
+  line-height: 1.645;
+}
+main > .intro-h-container > .intro-h-content p span {
+  font-weight: 700;
+}
+main > .intro-h-container .intro-welfare-container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+main > .intro-h-container .intro-welfare-container .chaeum {
+  padding: 62px 0 78px;
+  display: flex;
+  border-bottom: 1px solid #e5e5e5;
+}
+main > .intro-h-container .intro-welfare-container .chaeum .chaeum-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main > .intro-h-container .intro-welfare-container .chaeum .chaeum-left span {
+  font-size: 2.71em;
+  letter-spacing: -0.0349em;
+  line-height: 1.3;
+  font-weight: bold;
+}
+main > .intro-h-container .intro-welfare-container .chaeum .chaeum-left span em {
+  color: #faa61a;
+  font-style: normal;
+}
+main > .intro-h-container .intro-welfare-container .chaeum .chaeum-left p {
+  font-size: 1.1875em;
+  letter-spacing: -0.00352em;
+  line-height: 1.47;
+  color: #444;
+  margin-top: 15px;
+}
+main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right {
+  width: 50%;
+  padding: 0 92px 0 30px;
+}
+main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul li {
+  width: 20%;
+  margin: 27px 6%;
+}
+main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul li div {
+  position: relative;
+  padding-top: 100%;
+  background: #f8f8f8;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+}
+main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul li p {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 1.06em;
+  line-height: 1.47;
+  color: #555;
+  letter-spacing: -0.035em;
+}
+main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul .chaeum-first div:before {
+  content: "";
+  background-image: url("../img/welfare_icon_01_01.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%;
+}
+main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul .chaeum-second div:before {
+  content: "";
+  background-image: url("../img/welfare_icon_01_02.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%;
+}
+main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul .chaeum-third div:before {
+  content: "";
+  background-image: url("../img/welfare_icon_01_03.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%;
+}
+main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul .chaeum-fourth div:before {
+  content: "";
+  background-image: url("../img/welfare_icon_01_04.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%;
+}
+main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul .chaeum-fifth div:before {
+  content: "";
+  background-image: url("../img/welfare_icon_01_05.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%;
+}
+main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul .chaeum-sixth div:before {
+  content: "";
+  background-image: url("../img/welfare_icon_01_06.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%;
+}
+main > .intro-h-container .intro-welfare-container .tuium {
+  padding: 50px 0;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+}
+main > .intro-h-container .intro-welfare-container .tuium .tuium-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main > .intro-h-container .intro-welfare-container .tuium .tuium-left span {
+  font-size: 2.71em;
+  letter-spacing: -0.0349em;
+  line-height: 1.3;
+  font-weight: bold;
+}
+main > .intro-h-container .intro-welfare-container .tuium .tuium-left span em {
+  color: #faa61a;
+  font-style: normal;
+}
+main > .intro-h-container .intro-welfare-container .tuium .tuium-left p {
+  font-size: 1.1875em;
+  letter-spacing: -0.00352em;
+  line-height: 1.47;
+  color: #444;
+  margin-top: 15px;
+}
+main > .intro-h-container .intro-welfare-container .tuium .tuium-left p em {
+  font-style: normal;
+  font-weight: bold;
+}
+main > .intro-h-container .intro-welfare-container .tuium .tuium-right {
+  position: relative;
+  width: 50%;
+}
+main > .intro-h-container .intro-welfare-container .tuium .tuium-right .tuium-absolute {
+  position: absolute;
+  width: 25%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 7.4px 8.2px 23.5px 0.5px rgba(0, 0, 0, 0.16);
+  z-index: 99;
+}
+main > .intro-h-container .intro-welfare-container .tuium .tuium-right .tuium-absolute > div {
+  display: block;
+  position: relative;
+  padding-top: 100%;
+}
+main > .intro-h-container .intro-welfare-container .tuium .tuium-right .tuium-absolute > div > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main > .intro-h-container .intro-welfare-container .tuium .tuium-right .tuium-background {
+  border-bottom-right-radius: 140px;
+  overflow: hidden;
+}
+main > .intro-h-container .intro-welfare-container .jiwon {
+  padding: 70px 0;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+}
+main > .intro-h-container .intro-welfare-container .jiwon .jiwon-left {
+  width: 37%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main > .intro-h-container .intro-welfare-container .jiwon .jiwon-left span {
+  font-size: 2.71em;
+  letter-spacing: -0.0349em;
+  line-height: 1.3;
+  font-weight: bold;
+}
+main > .intro-h-container .intro-welfare-container .jiwon .jiwon-left span em {
+  color: #faa61a;
+  font-style: normal;
+}
+main > .intro-h-container .intro-welfare-container .jiwon .jiwon-left p {
+  font-size: 1.1875em;
+  letter-spacing: -0.00352em;
+  line-height: 1.47;
+  color: #444;
+  margin-top: 15px;
+}
+main > .intro-h-container .intro-welfare-container .jiwon .jiwon-left p em {
+  font-style: normal;
+  font-weight: bold;
+}
+main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right {
+  width: 63%;
+  display: flex;
+  flex-direction: column;
+}
+main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 45px;
+}
+main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li {
+  padding: 0 40px;
+}
+main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-txtbox {
+  padding-top: 50px;
+}
+main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-txtbox span {
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.035em;
+}
+main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-txtbox p {
+  margin-top: 8px;
+  font-size: 1.06em;
+  line-height: 1.47;
+  color: #555;
+  letter-spacing: -0.035em;
+  font-style: normal;
+}
+main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right > div {
+  justify-content: center;
+  text-align: center;
+  padding-top: 45px;
 }/*# sourceMappingURL=employ_sub01.css.map */

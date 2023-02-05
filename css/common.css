@@ -88,6 +88,13 @@ header .header-container .header-main-container h1 .white {
   left: 0%;
   width: 255px;
   height: 53px;
+  opacity: 1;
+}
+header .header-container .header-main-container h1 .black {
+  position: absolute;
+  left: 0%;
+  width: 255px;
+  height: 53px;
   opacity: 0;
 }
 header .header-container .header-main-container button.open-sitemap {
@@ -387,6 +394,13 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     width: 100%;
   }
   body header .header-container .header-main-container h1 .white {
+    position: absolute;
+    left: 0%;
+    width: 255px;
+    height: 53px;
+    opacity: 1;
+  }
+  body header .header-container .header-main-container h1 .black {
     position: absolute;
     left: 0%;
     width: 255px;

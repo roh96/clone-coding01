@@ -90,6 +90,13 @@ header .header-container .header-main-container h1 .white {
   height: 53px;
   opacity: 0;
 }
+header .header-container .header-main-container h1 .black {
+  position: absolute;
+  left: 0%;
+  width: 255px;
+  height: 53px;
+  opacity: 1;
+}
 header .header-container .header-main-container button.open-sitemap {
   width: 35px;
   height: 29px;
@@ -113,7 +120,7 @@ header .header-container nav ul li {
   font-weight: bold;
 }
 header .header-container nav ul li a {
-  color: #fff;
+  color: #000;
   transition: 0.5;
 }
 header .header-container nav ul li.companyli:hover, header .header-container nav ul li.companyli.active > a {
@@ -359,7 +366,7 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     top: 0%;
     left: 0%;
     background-color: #fff;
-    border-bottom: 1px solid #272727;
+    border-bottom: none;
     z-index: 999;
   }
   body header .header-container {
@@ -387,6 +394,13 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     width: 100%;
   }
   body header .header-container .header-main-container h1 .white {
+    position: absolute;
+    left: 0%;
+    width: 255px;
+    height: 53px;
+    opacity: 1;
+  }
+  body header .header-container .header-main-container h1 .black {
     position: absolute;
     left: 0%;
     width: 255px;
@@ -507,7 +521,7 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     top: 0%;
     left: 0%;
     background-color: #fff;
-    border-bottom: 1px solid #272727;
+    border-bottom: none;
     z-index: 999;
   }
   body header .header-container {
@@ -824,6 +838,7 @@ main .intro-menu-container .intro-menu-content ul li a:hover::after {
 main > .intro-h-container {
   width: 100%;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 main > .intro-h-container > .intro-h-content {
   max-width: 1320px;
@@ -1041,7 +1056,7 @@ main > .intro-h-container .intro-welfare-container .tuium .tuium-right .tuium-ba
   overflow: hidden;
 }
 main > .intro-h-container .intro-welfare-container .jiwon {
-  padding: 70px 0;
+  padding: 100px 0 70px;
   border-bottom: 1px solid #e5e5e5;
   display: flex;
 }
@@ -1050,6 +1065,7 @@ main > .intro-h-container .intro-welfare-container .jiwon .jiwon-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: -95px;
 }
 main > .intro-h-container .intro-welfare-container .jiwon .jiwon-left span {
   font-size: 2.71em;
@@ -1076,6 +1092,7 @@ main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right {
   width: 63%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul {
   display: flex;
@@ -1084,9 +1101,14 @@ main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul {
 }
 main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li {
   padding: 0 40px;
+  position: relative;
+}
+main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-imgbox {
+  text-align: center;
 }
 main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-txtbox {
   padding-top: 50px;
+  text-align: center;
 }
 main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-txtbox span {
   font-size: 1.25em;
@@ -1102,8 +1124,1505 @@ main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .ji
   letter-spacing: -0.035em;
   font-style: normal;
 }
+main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-first:before {
+  content: "";
+  background-color: #f8f8f8;
+  position: absolute;
+  width: calc(200% - 50px);
+  top: -20%;
+  left: 10%;
+  padding-top: 58.55%;
+  background: #f8f8f8;
+  border-radius: 66px;
+  border-top-right-radius: 0;
+  z-index: -99;
+}
+main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-second:before {
+  content: "or";
+  position: absolute;
+  top: 6.57%;
+  left: 0;
+  transform: translateX(-50%);
+}
+main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-third:before {
+  content: "\e913";
+  font-family: "xeicon";
+  font-size: 19px;
+  position: absolute;
+  top: 6.57%;
+  left: 0;
+  transform: translateX(-50%);
+}
+main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-fourth:before {
+  content: "\e913";
+  font-family: "xeicon";
+  font-size: 19px;
+  position: absolute;
+  top: 6.57%;
+  left: 0;
+  transform: translateX(-50%);
+}
 main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right > div {
+  display: flex;
   justify-content: center;
   text-align: center;
-  padding-top: 45px;
+  border: 1px solid #d6d6d6;
+  color: rgba(35, 35, 35, 0.7);
+  width: 179px;
+  height: 38px;
+  line-height: 38px;
+  display: inline-block;
+  border-radius: 50px;
+}
+main > .intro-h-container .intro-welfare-container .welfare .refresh {
+  padding-top: 168px;
+}
+main > .intro-h-container .intro-welfare-container .welfare .refresh > span {
+  font-weight: bold;
+  padding-bottom: 35px;
+  font-size: 2.34em;
+  letter-spacing: -0.035em;
+  line-height: 1.3;
+  display: inline-block;
+  position: relative;
+}
+main > .intro-h-container .intro-welfare-container .welfare .refresh > span:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  width: 14px;
+  height: 14px;
+  background-color: #faa61a;
+  border-radius: 50%;
+  border-bottom-left-radius: 0%;
+}
+main > .intro-h-container .intro-welfare-container .welfare .refresh > div {
+  width: 100%;
+  border-top: 1px solid #919191;
+  border-bottom: 1px solid #ececec;
+}
+main > .intro-h-container .intro-welfare-container .welfare .refresh > div ul {
+  width: 100%;
+  display: flex;
+  padding: 0 18px;
+}
+main > .intro-h-container .intro-welfare-container .welfare .refresh > div ul li {
+  width: 33.3%;
+  padding: 55px 0;
+  display: flex;
+}
+main > .intro-h-container .intro-welfare-container .welfare .refresh > div ul li :nth-child(1) {
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+}
+main > .intro-h-container .intro-welfare-container .welfare .refresh > div ul li :nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main > .intro-h-container .intro-welfare-container .welfare .refresh > div ul li :nth-child(2) span {
+  padding: 0%;
+  font-size: 1.25em;
+  line-height: 1.4;
+  letter-spacing: -0.035em;
+}
+main > .intro-h-container .intro-welfare-container .welfare .refresh > div ul li :nth-child(2) p {
+  padding-top: 10px;
+  font-size: 1.06em;
+  line-height: 1.47;
+  color: #555;
+  letter-spacing: -0.035em;
+}
+main > .intro-h-container .intro-welfare-container .welfare .family {
+  padding-top: 168px;
+  padding-top: 168px;
+}
+main > .intro-h-container .intro-welfare-container .welfare .family > span {
+  font-weight: bold;
+  padding-bottom: 35px;
+  font-size: 2.34em;
+  letter-spacing: -0.035em;
+  line-height: 1.3;
+  display: inline-block;
+  position: relative;
+}
+main > .intro-h-container .intro-welfare-container .welfare .family > span:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  width: 14px;
+  height: 14px;
+  background-color: #faa61a;
+  border-radius: 50%;
+  border-bottom-left-radius: 0%;
+}
+main > .intro-h-container .intro-welfare-container .welfare .family > div {
+  width: 100%;
+  border-top: 1px solid #919191;
+  border-bottom: 1px solid #ececec;
+}
+main > .intro-h-container .intro-welfare-container .welfare .family > div ul {
+  width: 100%;
+  display: flex;
+  padding: 0 18px;
+}
+main > .intro-h-container .intro-welfare-container .welfare .family > div ul li {
+  width: 33.3%;
+  padding: 55px 0;
+  display: flex;
+}
+main > .intro-h-container .intro-welfare-container .welfare .family > div ul li :nth-child(1) {
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+}
+main > .intro-h-container .intro-welfare-container .welfare .family > div ul li :nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main > .intro-h-container .intro-welfare-container .welfare .family > div ul li :nth-child(2) span {
+  padding: 0%;
+  font-size: 1.25em;
+  line-height: 1.4;
+  letter-spacing: -0.035em;
+}
+main > .intro-h-container .intro-welfare-container .welfare .family > div ul li :nth-child(2) p {
+  padding-top: 10px;
+  font-size: 1.06em;
+  line-height: 1.47;
+  color: #555;
+  letter-spacing: -0.035em;
+}
+main > .intro-h-container .intro-welfare-container .benefit {
+  padding-top: 168px;
+}
+main > .intro-h-container .intro-welfare-container .benefit > span {
+  font-weight: bold;
+  padding-bottom: 35px;
+  font-size: 2.34em;
+  letter-spacing: -0.035em;
+  line-height: 1.3;
+  display: inline-block;
+  position: relative;
+}
+main > .intro-h-container .intro-welfare-container .benefit > span:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  width: 14px;
+  height: 14px;
+  background-color: #faa61a;
+  border-radius: 50%;
+  border-bottom-left-radius: 0%;
+}
+main > .intro-h-container .intro-welfare-container .benefit > div {
+  width: 100%;
+  border-top: 1px solid #919191;
+  border-bottom: 1px solid #ececec;
+}
+main > .intro-h-container .intro-welfare-container .benefit > div ul {
+  width: 100%;
+  display: flex;
+  padding: 66px 0;
+  flex-wrap: wrap;
+}
+main > .intro-h-container .intro-welfare-container .benefit > div ul li {
+  width: 33.3%;
+  padding: 33px 0;
+  display: flex;
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+}
+main > .intro-h-container .intro-welfare-container .benefit > div ul li :nth-child(1) {
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+}
+main > .intro-h-container .intro-welfare-container .benefit > div ul li :nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main > .intro-h-container .intro-welfare-container .benefit > div ul li :nth-child(2) span {
+  padding: 0%;
+  font-size: 1.25em;
+  line-height: 1.4;
+  letter-spacing: -0.035em;
+}
+main > .intro-h-container .intro-welfare-container .benefit > div ul li :nth-child(2) p {
+  padding-top: 10px;
+  font-size: 1.06em;
+  line-height: 1.47;
+  color: #555;
+  letter-spacing: -0.035em;
+}
+main > .intro-h-container .intro-welfare-container .benefit > div ul li:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+@media (min-width: 800px) and (max-width: 1260px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  main .intro-container {
+    width: 100%;
+    padding-top: 210px;
+  }
+  main .intro-container .intro-content {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 83px;
+  }
+  main .intro-container .intro-content .abox div {
+    display: inline-block;
+  }
+  main .intro-container .intro-content .abox .first {
+    font-size: 14px;
+  }
+  main .intro-container .intro-content .abox .first:before {
+    font-family: "xeicon";
+    content: "\e900";
+  }
+  main .intro-container .intro-content .abox .first:after {
+    font-family: "xeicon";
+    display: inline-block;
+    content: "\e93f";
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+    margin: 0px 7px 0 5px;
+    color: #222;
+    font-size: 18px;
+  }
+  main .intro-container .intro-content .abox .second {
+    font-size: 14px;
+  }
+  main .intro-container .intro-content .abox .second:after {
+    font-family: "xeicon";
+    display: inline-block;
+    content: "\e93f";
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+    margin: 0px 7px 0 5px;
+    color: #222;
+    font-size: 18px;
+  }
+  main .intro-container .intro-content h3 {
+    padding-top: 57px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.36;
+    letter-spacing: -0.02rem;
+    color: #222;
+  }
+  main .intro-container .intro-content h3 p span {
+    font-weight: 100;
+  }
+  main .intro-container .intro-content h3 p span em {
+    font-weight: 700;
+    font-style: normal;
+  }
+  main .intro-menu-container {
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  main .intro-menu-container .intro-menu-content {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+  main .intro-menu-container .intro-menu-content ul {
+    width: 100%;
+    display: flex;
+  }
+  main .intro-menu-container .intro-menu-content ul li {
+    color: #ccc;
+    padding-right: 70px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  main .intro-menu-container .intro-menu-content ul li a {
+    display: block;
+    height: 100%;
+    padding: 13px 0 15px;
+    color: #ccc;
+    position: relative;
+  }
+  main .intro-menu-container .intro-menu-content ul li a::after {
+    transition: 0.5s;
+    content: "";
+    width: 0%;
+    left: 0;
+    bottom: -1px;
+    border-bottom: 1px solid #faa61a;
+    position: absolute;
+    z-index: 99;
+  }
+  main .intro-menu-container .intro-menu-content ul li a:hover {
+    color: #faa61a;
+  }
+  main .intro-menu-container .intro-menu-content ul li a:hover::after {
+    width: 100%;
+  }
+  main > .intro-h-container {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  main > .intro-h-container > .intro-h-content {
+    max-width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  main > .intro-h-container > .intro-h-content h4 {
+    font-size: 56px;
+    letter-spacing: -0.00892em;
+    line-height: 1.2;
+  }
+  main > .intro-h-container > .intro-h-content p {
+    padding-top: 28px;
+    font-size: 24px;
+    letter-spacing: -0.035em;
+    line-height: 1.645;
+  }
+  main > .intro-h-container > .intro-h-content p span {
+    font-weight: 700;
+  }
+  main > .intro-h-container .intro-welfare-container {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum {
+    padding: 62px 0 78px;
+    display: flex;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-left span {
+    font-size: 2.71em;
+    letter-spacing: -0.0349em;
+    line-height: 1.3;
+    font-weight: bold;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-left span em {
+    color: #faa61a;
+    font-style: normal;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-left p {
+    font-size: 1.1875em;
+    letter-spacing: -0.00352em;
+    line-height: 1.47;
+    color: #444;
+    margin-top: 15px;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right {
+    width: 50%;
+    padding: 0 92px 0 30px;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul li {
+    width: 20%;
+    margin: 27px 6%;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul li div {
+    position: relative;
+    padding-top: 100%;
+    background: #f8f8f8;
+    border-radius: 50%;
+    border-top-right-radius: 0;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul li p {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 1.06em;
+    line-height: 1.47;
+    color: #555;
+    letter-spacing: -0.035em;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul .chaeum-first div:before {
+    content: "";
+    background-image: url("../img/welfare_icon_01_01.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul .chaeum-second div:before {
+    content: "";
+    background-image: url("../img/welfare_icon_01_02.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul .chaeum-third div:before {
+    content: "";
+    background-image: url("../img/welfare_icon_01_03.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul .chaeum-fourth div:before {
+    content: "";
+    background-image: url("../img/welfare_icon_01_04.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul .chaeum-fifth div:before {
+    content: "";
+    background-image: url("../img/welfare_icon_01_05.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul .chaeum-sixth div:before {
+    content: "";
+    background-image: url("../img/welfare_icon_01_06.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium {
+    padding: 50px 0;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-left span {
+    font-size: 2.71em;
+    letter-spacing: -0.0349em;
+    line-height: 1.3;
+    font-weight: bold;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-left span em {
+    color: #faa61a;
+    font-style: normal;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-left p {
+    font-size: 1.1875em;
+    letter-spacing: -0.00352em;
+    line-height: 1.47;
+    color: #444;
+    margin-top: 15px;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-left p em {
+    font-style: normal;
+    font-weight: bold;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-right {
+    position: relative;
+    width: 50%;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-right .tuium-absolute {
+    position: absolute;
+    width: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 7.4px 8.2px 23.5px 0.5px rgba(0, 0, 0, 0.16);
+    z-index: 99;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-right .tuium-absolute > div {
+    display: block;
+    position: relative;
+    padding-top: 100%;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-right .tuium-absolute > div > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-right .tuium-background {
+    border-bottom-right-radius: 140px;
+    overflow: hidden;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon {
+    padding: 100px 0 70px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-left {
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -95px;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-left span {
+    font-size: 2.71em;
+    letter-spacing: -0.0349em;
+    line-height: 1.3;
+    font-weight: bold;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-left span em {
+    color: #faa61a;
+    font-style: normal;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-left p {
+    font-size: 1.1875em;
+    letter-spacing: -0.00352em;
+    line-height: 1.47;
+    color: #444;
+    margin-top: 15px;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-left p em {
+    font-style: normal;
+    font-weight: bold;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right {
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 45px;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li {
+    padding: 0 40px;
+    position: relative;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-imgbox {
+    text-align: center;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-txtbox {
+    padding-top: 50px;
+    text-align: center;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-txtbox span {
+    font-size: 1.25em;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -0.035em;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-txtbox p {
+    margin-top: 8px;
+    font-size: 1.06em;
+    line-height: 1.47;
+    color: #555;
+    letter-spacing: -0.035em;
+    font-style: normal;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-first:before {
+    content: "";
+    background-color: #f8f8f8;
+    position: absolute;
+    width: calc(200% - 50px);
+    top: -20%;
+    left: 10%;
+    padding-top: 58.55%;
+    background: #f8f8f8;
+    border-radius: 66px;
+    border-top-right-radius: 0;
+    z-index: -99;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-second:before {
+    content: "or";
+    position: absolute;
+    top: 6.57%;
+    left: 0;
+    transform: translateX(-50%);
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-third:before {
+    content: "\e913";
+    font-family: "xeicon";
+    font-size: 19px;
+    position: absolute;
+    top: 6.57%;
+    left: 0;
+    transform: translateX(-50%);
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-fourth:before {
+    content: "\e913";
+    font-family: "xeicon";
+    font-size: 19px;
+    position: absolute;
+    top: 6.57%;
+    left: 0;
+    transform: translateX(-50%);
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right > div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #d6d6d6;
+    color: rgba(35, 35, 35, 0.7);
+    width: 179px;
+    height: 38px;
+    line-height: 38px;
+    display: inline-block;
+    border-radius: 50px;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh {
+    padding-top: 168px;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh > span {
+    font-weight: bold;
+    padding-bottom: 35px;
+    font-size: 2.34em;
+    letter-spacing: -0.035em;
+    line-height: 1.3;
+    display: inline-block;
+    position: relative;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh > span:after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    width: 14px;
+    height: 14px;
+    background-color: #faa61a;
+    border-radius: 50%;
+    border-bottom-left-radius: 0%;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh > div {
+    width: 100%;
+    border-top: 1px solid #919191;
+    border-bottom: 1px solid #ececec;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh > div ul {
+    width: 100%;
+    display: flex;
+    padding: 0 18px;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh > div ul li {
+    width: 33.3%;
+    padding: 55px 0;
+    display: flex;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh > div ul li :nth-child(1) {
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh > div ul li :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh > div ul li :nth-child(2) span {
+    padding: 0%;
+    font-size: 1.25em;
+    line-height: 1.4;
+    letter-spacing: -0.035em;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh > div ul li :nth-child(2) p {
+    padding-top: 10px;
+    font-size: 1.06em;
+    line-height: 1.47;
+    color: #555;
+    letter-spacing: -0.035em;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family {
+    padding-top: 168px;
+    padding-top: 168px;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family > span {
+    font-weight: bold;
+    padding-bottom: 35px;
+    font-size: 2.34em;
+    letter-spacing: -0.035em;
+    line-height: 1.3;
+    display: inline-block;
+    position: relative;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family > span:after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    width: 14px;
+    height: 14px;
+    background-color: #faa61a;
+    border-radius: 50%;
+    border-bottom-left-radius: 0%;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family > div {
+    width: 100%;
+    border-top: 1px solid #919191;
+    border-bottom: 1px solid #ececec;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family > div ul {
+    width: 100%;
+    display: flex;
+    padding: 0 18px;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family > div ul li {
+    width: 33.3%;
+    padding: 55px 0;
+    display: flex;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family > div ul li :nth-child(1) {
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family > div ul li :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family > div ul li :nth-child(2) span {
+    padding: 0%;
+    font-size: 1.25em;
+    line-height: 1.4;
+    letter-spacing: -0.035em;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family > div ul li :nth-child(2) p {
+    padding-top: 10px;
+    font-size: 1.06em;
+    line-height: 1.47;
+    color: #555;
+    letter-spacing: -0.035em;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit {
+    padding-top: 168px;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > span {
+    font-weight: bold;
+    padding-bottom: 35px;
+    font-size: 2.34em;
+    letter-spacing: -0.035em;
+    line-height: 1.3;
+    display: inline-block;
+    position: relative;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > span:after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    width: 14px;
+    height: 14px;
+    background-color: #faa61a;
+    border-radius: 50%;
+    border-bottom-left-radius: 0%;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > div {
+    width: 100%;
+    border-top: 1px solid #919191;
+    border-bottom: 1px solid #ececec;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > div ul {
+    width: 100%;
+    display: flex;
+    padding: 66px 0;
+    flex-wrap: wrap;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > div ul li {
+    width: 33.3%;
+    padding: 33px 0;
+    display: flex;
+    border-top: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > div ul li :nth-child(1) {
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > div ul li :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > div ul li :nth-child(2) span {
+    padding: 0%;
+    font-size: 1.25em;
+    line-height: 1.4;
+    letter-spacing: -0.035em;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > div ul li :nth-child(2) p {
+    padding-top: 10px;
+    font-size: 1.06em;
+    line-height: 1.47;
+    color: #555;
+    letter-spacing: -0.035em;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > div ul li:nth-child(odd) {
+    background-color: #fafafa;
+  }
+}
+@media (min-width: 400px) and (max-width: 800px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  main .intro-container {
+    width: 100%;
+    padding-top: 210px;
+  }
+  main .intro-container .intro-content {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 83px;
+  }
+  main .intro-container .intro-content .abox div {
+    display: inline-block;
+  }
+  main .intro-container .intro-content .abox .first {
+    font-size: 14px;
+  }
+  main .intro-container .intro-content .abox .first:before {
+    font-family: "xeicon";
+    content: "\e900";
+  }
+  main .intro-container .intro-content .abox .first:after {
+    font-family: "xeicon";
+    display: inline-block;
+    content: "\e93f";
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+    margin: 0px 7px 0 5px;
+    color: #222;
+    font-size: 18px;
+  }
+  main .intro-container .intro-content .abox .second {
+    font-size: 14px;
+  }
+  main .intro-container .intro-content .abox .second:after {
+    font-family: "xeicon";
+    display: inline-block;
+    content: "\e93f";
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+    margin: 0px 7px 0 5px;
+    color: #222;
+    font-size: 18px;
+  }
+  main .intro-container .intro-content h3 {
+    padding-top: 57px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.36;
+    letter-spacing: -0.02rem;
+    color: #222;
+  }
+  main .intro-container .intro-content h3 p span {
+    font-weight: 100;
+  }
+  main .intro-container .intro-content h3 p span em {
+    font-weight: 700;
+    font-style: normal;
+  }
+  main .intro-menu-container {
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  main .intro-menu-container .intro-menu-content {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+  main .intro-menu-container .intro-menu-content ul {
+    width: 100%;
+    display: flex;
+  }
+  main .intro-menu-container .intro-menu-content ul li {
+    color: #ccc;
+    padding-right: 70px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  main .intro-menu-container .intro-menu-content ul li a {
+    display: block;
+    height: 100%;
+    padding: 13px 0 15px;
+    color: #ccc;
+    position: relative;
+  }
+  main .intro-menu-container .intro-menu-content ul li a::after {
+    transition: 0.5s;
+    content: "";
+    width: 0%;
+    left: 0;
+    bottom: -1px;
+    border-bottom: 1px solid #faa61a;
+    position: absolute;
+    z-index: 99;
+  }
+  main .intro-menu-container .intro-menu-content ul li a:hover {
+    color: #faa61a;
+  }
+  main .intro-menu-container .intro-menu-content ul li a:hover::after {
+    width: 100%;
+  }
+  main > .intro-h-container {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  main > .intro-h-container > .intro-h-content {
+    max-width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  main > .intro-h-container > .intro-h-content h4 {
+    font-size: 56px;
+    letter-spacing: -0.00892em;
+    line-height: 1.2;
+  }
+  main > .intro-h-container > .intro-h-content p {
+    padding-top: 28px;
+    font-size: 24px;
+    letter-spacing: -0.035em;
+    line-height: 1.645;
+  }
+  main > .intro-h-container > .intro-h-content p span {
+    font-weight: 700;
+  }
+  main > .intro-h-container .intro-welfare-container {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum {
+    padding: 62px 0 78px;
+    display: flex;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-left span {
+    font-size: 2.71em;
+    letter-spacing: -0.0349em;
+    line-height: 1.3;
+    font-weight: bold;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-left span em {
+    color: #faa61a;
+    font-style: normal;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-left p {
+    font-size: 1.1875em;
+    letter-spacing: -0.00352em;
+    line-height: 1.47;
+    color: #444;
+    margin-top: 15px;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right {
+    width: 50%;
+    padding: 0 92px 0 30px;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul li {
+    width: 20%;
+    margin: 27px 6%;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul li div {
+    position: relative;
+    padding-top: 100%;
+    background: #f8f8f8;
+    border-radius: 50%;
+    border-top-right-radius: 0;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul li p {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 1.06em;
+    line-height: 1.47;
+    color: #555;
+    letter-spacing: -0.035em;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul .chaeum-first div:before {
+    content: "";
+    background-image: url("../img/welfare_icon_01_01.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul .chaeum-second div:before {
+    content: "";
+    background-image: url("../img/welfare_icon_01_02.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul .chaeum-third div:before {
+    content: "";
+    background-image: url("../img/welfare_icon_01_03.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul .chaeum-fourth div:before {
+    content: "";
+    background-image: url("../img/welfare_icon_01_04.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul .chaeum-fifth div:before {
+    content: "";
+    background-image: url("../img/welfare_icon_01_05.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+  }
+  main > .intro-h-container .intro-welfare-container .chaeum .chaeum-right ul .chaeum-sixth div:before {
+    content: "";
+    background-image: url("../img/welfare_icon_01_06.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium {
+    padding: 50px 0;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-left span {
+    font-size: 2.71em;
+    letter-spacing: -0.0349em;
+    line-height: 1.3;
+    font-weight: bold;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-left span em {
+    color: #faa61a;
+    font-style: normal;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-left p {
+    font-size: 1.1875em;
+    letter-spacing: -0.00352em;
+    line-height: 1.47;
+    color: #444;
+    margin-top: 15px;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-left p em {
+    font-style: normal;
+    font-weight: bold;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-right {
+    position: relative;
+    width: 50%;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-right .tuium-absolute {
+    position: absolute;
+    width: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 7.4px 8.2px 23.5px 0.5px rgba(0, 0, 0, 0.16);
+    z-index: 99;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-right .tuium-absolute > div {
+    display: block;
+    position: relative;
+    padding-top: 100%;
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-right .tuium-absolute > div > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  main > .intro-h-container .intro-welfare-container .tuium .tuium-right .tuium-background {
+    border-bottom-right-radius: 140px;
+    overflow: hidden;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon {
+    padding: 100px 0 70px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-left {
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -95px;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-left span {
+    font-size: 2.71em;
+    letter-spacing: -0.0349em;
+    line-height: 1.3;
+    font-weight: bold;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-left span em {
+    color: #faa61a;
+    font-style: normal;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-left p {
+    font-size: 1.1875em;
+    letter-spacing: -0.00352em;
+    line-height: 1.47;
+    color: #444;
+    margin-top: 15px;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-left p em {
+    font-style: normal;
+    font-weight: bold;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right {
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 45px;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li {
+    padding: 0 40px;
+    position: relative;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-imgbox {
+    text-align: center;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-txtbox {
+    padding-top: 50px;
+    text-align: center;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-txtbox span {
+    font-size: 1.25em;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -0.035em;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-txtbox p {
+    margin-top: 8px;
+    font-size: 1.06em;
+    line-height: 1.47;
+    color: #555;
+    letter-spacing: -0.035em;
+    font-style: normal;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-first:before {
+    content: "";
+    background-color: #f8f8f8;
+    position: absolute;
+    width: calc(200% - 50px);
+    top: -20%;
+    left: 10%;
+    padding-top: 58.55%;
+    background: #f8f8f8;
+    border-radius: 66px;
+    border-top-right-radius: 0;
+    z-index: -99;
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-second:before {
+    content: "or";
+    position: absolute;
+    top: 6.57%;
+    left: 0;
+    transform: translateX(-50%);
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-third:before {
+    content: "\e913";
+    font-family: "xeicon";
+    font-size: 19px;
+    position: absolute;
+    top: 6.57%;
+    left: 0;
+    transform: translateX(-50%);
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right ul li .jiwon-fourth:before {
+    content: "\e913";
+    font-family: "xeicon";
+    font-size: 19px;
+    position: absolute;
+    top: 6.57%;
+    left: 0;
+    transform: translateX(-50%);
+  }
+  main > .intro-h-container .intro-welfare-container .jiwon .jiwon-right > div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #d6d6d6;
+    color: rgba(35, 35, 35, 0.7);
+    width: 179px;
+    height: 38px;
+    line-height: 38px;
+    display: inline-block;
+    border-radius: 50px;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh {
+    padding-top: 168px;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh > span {
+    font-weight: bold;
+    padding-bottom: 35px;
+    font-size: 2.34em;
+    letter-spacing: -0.035em;
+    line-height: 1.3;
+    display: inline-block;
+    position: relative;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh > span:after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    width: 14px;
+    height: 14px;
+    background-color: #faa61a;
+    border-radius: 50%;
+    border-bottom-left-radius: 0%;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh > div {
+    width: 100%;
+    border-top: 1px solid #919191;
+    border-bottom: 1px solid #ececec;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh > div ul {
+    width: 100%;
+    display: flex;
+    padding: 0 18px;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh > div ul li {
+    width: 33.3%;
+    padding: 55px 0;
+    display: flex;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh > div ul li :nth-child(1) {
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh > div ul li :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh > div ul li :nth-child(2) span {
+    padding: 0%;
+    font-size: 1.25em;
+    line-height: 1.4;
+    letter-spacing: -0.035em;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .refresh > div ul li :nth-child(2) p {
+    padding-top: 10px;
+    font-size: 1.06em;
+    line-height: 1.47;
+    color: #555;
+    letter-spacing: -0.035em;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family {
+    padding-top: 168px;
+    padding-top: 168px;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family > span {
+    font-weight: bold;
+    padding-bottom: 35px;
+    font-size: 2.34em;
+    letter-spacing: -0.035em;
+    line-height: 1.3;
+    display: inline-block;
+    position: relative;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family > span:after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    width: 14px;
+    height: 14px;
+    background-color: #faa61a;
+    border-radius: 50%;
+    border-bottom-left-radius: 0%;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family > div {
+    width: 100%;
+    border-top: 1px solid #919191;
+    border-bottom: 1px solid #ececec;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family > div ul {
+    width: 100%;
+    display: flex;
+    padding: 0 18px;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family > div ul li {
+    width: 33.3%;
+    padding: 55px 0;
+    display: flex;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family > div ul li :nth-child(1) {
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family > div ul li :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family > div ul li :nth-child(2) span {
+    padding: 0%;
+    font-size: 1.25em;
+    line-height: 1.4;
+    letter-spacing: -0.035em;
+  }
+  main > .intro-h-container .intro-welfare-container .welfare .family > div ul li :nth-child(2) p {
+    padding-top: 10px;
+    font-size: 1.06em;
+    line-height: 1.47;
+    color: #555;
+    letter-spacing: -0.035em;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit {
+    padding-top: 168px;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > span {
+    font-weight: bold;
+    padding-bottom: 35px;
+    font-size: 2.34em;
+    letter-spacing: -0.035em;
+    line-height: 1.3;
+    display: inline-block;
+    position: relative;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > span:after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    width: 14px;
+    height: 14px;
+    background-color: #faa61a;
+    border-radius: 50%;
+    border-bottom-left-radius: 0%;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > div {
+    width: 100%;
+    border-top: 1px solid #919191;
+    border-bottom: 1px solid #ececec;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > div ul {
+    width: 100%;
+    display: flex;
+    padding: 66px 0;
+    flex-wrap: wrap;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > div ul li {
+    width: 33.3%;
+    padding: 33px 0;
+    display: flex;
+    border-top: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > div ul li :nth-child(1) {
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > div ul li :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > div ul li :nth-child(2) span {
+    padding: 0%;
+    font-size: 1.25em;
+    line-height: 1.4;
+    letter-spacing: -0.035em;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > div ul li :nth-child(2) p {
+    padding-top: 10px;
+    font-size: 1.06em;
+    line-height: 1.47;
+    color: #555;
+    letter-spacing: -0.035em;
+  }
+  main > .intro-h-container .intro-welfare-container .benefit > div ul li:nth-child(odd) {
+    background-color: #fafafa;
+  }
 }/*# sourceMappingURL=employ_sub01.css.map */

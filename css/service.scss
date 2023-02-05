@@ -1,4 +1,4 @@
-@import "./common.scss";
+@import "./common_sub.scss";
 body {
   margin: 0;
   padding: 0;
@@ -310,7 +310,7 @@ main {
       font-size: 1.0625em;
       margin: 0 auto;
       transition: 0.4s;
-      border: 1px solid #000
+      border: 1px solid #000;
       &:hover {
         color: #272727;
         background-color: #fff;
@@ -318,3 +318,5 @@ main {
     }
   }
 }
+
+@import "_media_service";

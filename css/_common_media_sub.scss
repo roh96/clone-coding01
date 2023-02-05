@@ -1,0 +1,402 @@
+@include device($tablet, $pc) {
+  //tablet
+  body {
+    header {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 5%;
+      position: fixed;
+      top: 0%;
+      left: 0%;
+      background-color: #fff;
+      border-bottom: none;
+      z-index: 999;
+      .header-container {
+        width: 100%;
+        padding-top: 0px;
+        .header-main-container {
+          padding: 0;
+          width: 100%;
+          height: 80px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          max-width: 1720px;
+          margin: 0 auto;
+          h1 {
+            position: relative;
+            a.frontsvg {
+              width: 196px;
+              height: 37px;
+              img {
+                width: 100%;
+              }
+            }
+            .white {
+              position: absolute;
+              left: 0%;
+              width: 255px;
+              height: 53px;
+              opacity: 1;
+            }
+            .black {
+              position: absolute;
+              left: 0%;
+              width: 255px;
+              height: 53px;
+              opacity: 0;
+            }
+          }
+          button.open-sitemap {
+            width: 22px;
+            margin-left: 150px;
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            img {
+              width: 100%;
+            }
+          }
+        }
+        nav {
+          display: none;
+          /*margin-left: auto;
+          ul {
+            display: flex;
+            li {
+              padding: 0 40px;
+              font-size: 20px;
+              font-weight: bold;
+  
+              a {
+                color: #fff;
+                transition: 0.5;
+              }
+              &.companyli:hover > a {
+                color: #faa61a;
+              }
+              &.companyli:hover .company {
+                height: 230px;
+                padding: 18px 30px;
+              }
+              &.serviceli:hover > a {
+                color: #faa61a;
+              }
+              &.employli:hover > a {
+                color: #faa61a;
+              }
+              &.employli:hover .employ {
+                height: 130px;
+                padding: 18px 30px;
+              }
+              &.companyli {
+                position: relative;
+                div.company {
+                  position: absolute;
+                  top: 40px;
+                  left: 40px;
+                  height: 0px;
+                  border-radius: 30px;
+                  border-top-left-radius: 0;
+                  background-color: #faa61a;
+                  padding: 0px 30px;
+                  flex-direction: column;
+                  overflow: hidden;
+                  transition: 0.5s;
+                  a {
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    white-space: nowrap;
+                    line-height: 3rem;
+                  }
+                }
+              }
+              &.employli {
+                position: relative;
+                div.employ {
+                  position: absolute;
+                  top: 40px;
+                  left: 40px;
+                  height: 0px;
+                  border-radius: 30px;
+                  border-top-left-radius: 0;
+                  background-color: #faa61a;
+                  padding: 0px 30px;
+                  flex-direction: column;
+                  overflow: hidden;
+                  transition: 0.5s;
+                  a {
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    white-space: nowrap;
+                    line-height: 3rem;
+                  }
+                }
+              }
+            }
+          }*/
+        }
+      }
+    }
+
+    footer {
+      width: 100%;
+      margin: 0 auto;
+      padding: 83px 0 62px;
+      background-color: #272727;
+      color: #222222;
+      position: relative;
+      > div.footer-container {
+        padding: 0 5%;
+        > div.left-container > div:first-child > div.tel {
+          > span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include device($mobile, $tablet) {
+  //mobile
+  body {
+    header {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 5%;
+      position: fixed;
+      top: 0%;
+      left: 0%;
+      background-color: #fff;
+      border-bottom: none;
+      z-index: 999;
+      .header-container {
+        width: 100%;
+        padding-top: 0px;
+        .header-main-container {
+          padding: 0;
+          width: 100%;
+          height: 80px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          max-width: 1720px;
+          margin: 0 auto;
+          h1 {
+            position: relative;
+            a.frontsvg {
+              width: 180px;
+              height: 37px;
+              img {
+                width: 100%;
+              }
+            }
+            .white {
+              position: absolute;
+              left: 0%;
+              width: 255px;
+              height: 53px;
+              opacity: 0;
+            }
+          }
+          button.open-sitemap {
+            width: 22px;
+            margin-left: 150px;
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            img {
+              width: 100%;
+            }
+          }
+        }
+        nav {
+          display: none;
+          /*margin-left: auto;
+          ul {
+            display: flex;
+            li {
+              padding: 0 40px;
+              font-size: 20px;
+              font-weight: bold;
+  
+              a {
+                color: #fff;
+                transition: 0.5;
+              }
+              &.companyli:hover > a {
+                color: #faa61a;
+              }
+              &.companyli:hover .company {
+                height: 230px;
+                padding: 18px 30px;
+              }
+              &.serviceli:hover > a {
+                color: #faa61a;
+              }
+              &.employli:hover > a {
+                color: #faa61a;
+              }
+              &.employli:hover .employ {
+                height: 130px;
+                padding: 18px 30px;
+              }
+              &.companyli {
+                position: relative;
+                div.company {
+                  position: absolute;
+                  top: 40px;
+                  left: 40px;
+                  height: 0px;
+                  border-radius: 30px;
+                  border-top-left-radius: 0;
+                  background-color: #faa61a;
+                  padding: 0px 30px;
+                  flex-direction: column;
+                  overflow: hidden;
+                  transition: 0.5s;
+                  a {
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    white-space: nowrap;
+                    line-height: 3rem;
+                  }
+                }
+              }
+              &.employli {
+                position: relative;
+                div.employ {
+                  position: absolute;
+                  top: 40px;
+                  left: 40px;
+                  height: 0px;
+                  border-radius: 30px;
+                  border-top-left-radius: 0;
+                  background-color: #faa61a;
+                  padding: 0px 30px;
+                  flex-direction: column;
+                  overflow: hidden;
+                  transition: 0.5s;
+                  a {
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    white-space: nowrap;
+                    line-height: 3rem;
+                  }
+                }
+              }
+            }
+          }*/
+        }
+      }
+    }
+
+    footer {
+      width: 100%;
+      //margin: 0 auto;
+      padding: 47.5px 0 75px;
+      background-color: #272727;
+      color: #222222;
+      position: relative;
+      > div.footer-container {
+        padding: 0 5%;
+        flex-direction: column;
+        > div.left-container {
+          width: 100%;
+          position: relative;
+          font-size: 13px;
+          > div:first-child {
+            width: 175px;
+          }
+          > ul {
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-align: bottom right;
+            > li {
+              padding-right: 0;
+              padding-top: 20px;
+              padding-left: 25px;
+              font-weight: inherit;
+            }
+          }
+          > div.adr {
+            padding-top: 50px;
+            > span {
+              display: inline-block;
+              color: #7c7c7c;
+              padding-top: 5px;
+              padding-right: 15px;
+              &:first-child {
+                display: block;
+                width: 100%;
+                padding-top: 0px;
+              }
+              > em {
+                font-style: normal;
+                color: #fff;
+              }
+            }
+          }
+          > div.tel {
+            padding-top: 20px;
+            > span {
+              display: block;
+              &:last-child {
+                padding-top: 5px;
+              }
+            }
+          }
+          > div.copy {
+            padding-top: 25px;
+          }
+        }
+        > div.right-container {
+          > div.right-top-container {
+            display: none;
+            > ul {
+              > li {
+              }
+            }
+          }
+          > div.right-bottom-container {
+            padding-top: 30px;
+            justify-content: flex-start;
+            > a.right-bottom-icon {
+              padding-right: 15px;
+            }
+            > div.right-bottom-site {
+              font-size: 13px;
+              padding: 15px 25px 15px 25px;
+              > div.arrow-box {
+                > div.arrow-text {
+                  padding-right: 10px;
+                }
+                > div.arrow {
+                  width: 6px;
+                  height: 6px;
+                  border-left: 1px solid #fff;
+                  border-top: 1px solid #fff;
+                  //font-family: "xeicon";
+                }
+                > div.gotosite {
+                  > a {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      > div.up-tool {
+        > div.xi-arrow-up {
+        }
+      }
+    }
+  }
+}

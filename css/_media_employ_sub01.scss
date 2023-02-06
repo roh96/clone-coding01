@@ -6,7 +6,7 @@
   main {
     .intro-container {
       width: 100%;
-      padding-top: 210px;
+      padding: 150px 5% 0;
       .intro-content {
         max-width: 1320px;
         margin: 0 auto;
@@ -70,6 +70,7 @@
     .intro-menu-container {
       width: 100%;
       border-bottom: 1px solid #e5e5e5;
+      padding: 0 5%;
       .intro-menu-content {
         max-width: 1320px;
         margin: 0 auto;
@@ -113,8 +114,7 @@
     }
     > .intro-h-container {
       width: 100%;
-      padding-top: 100px;
-      padding-bottom: 100px;
+      padding: 60px 5% 80px;
       > .intro-h-content {
         max-width: 1320px;
         margin: 0 auto;
@@ -168,14 +168,14 @@
           }
           .chaeum-right {
             width: 50%;
-            padding: 0 92px 0 30px;
+            padding: 0px;
             ul {
               display: flex;
               flex-wrap: wrap;
               justify-content: space-between;
               li {
-                width: 20%;
-                margin: 27px 6%;
+                width: 23%;
+                margin: 27px 5%;
                 div {
                   position: relative;
                   padding-top: 100%;
@@ -330,11 +330,12 @@
           }
         }
         .jiwon {
-          padding: 100px 0 70px;
+          padding: 170px 0 70px;
           border-bottom: 1px solid #e5e5e5;
           display: flex;
+          flex-direction: column;
           .jiwon-left {
-            width: 37%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -355,6 +356,9 @@
               line-height: 1.47;
               color: #444;
               margin-top: 15px;
+              br {
+                display: none;
+              }
               em {
                 font-style: normal;
                 font-weight: bold;
@@ -362,22 +366,25 @@
             }
           }
           .jiwon-right {
-            width: 63%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             ul {
+              width: 100%;
               display: flex;
               justify-content: space-between;
-              padding-bottom: 45px;
+              padding-top: 40px;
+              margin: 0 -40px;
               li {
+                width: 18%;
                 padding: 0 40px;
                 position: relative;
                 .jiwon-imgbox {
                   text-align: center;
                 }
                 .jiwon-txtbox {
-                  padding-top: 50px;
+                  padding-top: 30px;
                   text-align: center;
                   span {
                     font-size: 1.25em;
@@ -393,16 +400,20 @@
                     letter-spacing: -0.035em;
                     font-style: normal;
                   }
+                  br {
+                    display: none;
+                  }
                 }
                 .jiwon-first {
+                  padding: 45px 0;
                   &:before {
                     content: "";
                     background-color: #f8f8f8;
                     position: absolute;
-                    width: calc(200% - 50px);
-                    top: -20%;
+                    width: calc(200% + 60px);
+                    top: 0%;
                     left: 10%;
-                    padding-top: 58.55%;
+                    padding-top: 60.55%;
                     background: #f8f8f8;
                     border-radius: 66px;
                     border-top-right-radius: 0;
@@ -410,11 +421,12 @@
                   }
                 }
                 .jiwon-second {
+                  padding: 45px 0;
                   &:before {
                     content: "or";
                     position: absolute;
-                    top: 6.57%;
-                    left: 0;
+                    top: 15%;
+                    left: -18%;
                     transform: translateX(-50%);
                   }
                 }
@@ -424,9 +436,9 @@
                     font-family: "xeicon";
                     font-size: 19px;
                     position: absolute;
-                    top: 6.57%;
-                    left: 0;
-                    transform: translateX(-50%);
+                    top: 50%;
+                    left: -75%;
+                    transform: translate(-50%, -50%);
                   }
                 }
                 .jiwon-fourth {
@@ -435,9 +447,9 @@
                     font-family: "xeicon";
                     font-size: 19px;
                     position: absolute;
-                    top: 6.57%;
-                    left: 0;
-                    transform: translateX(-50%);
+                    top: 50%;
+                    left: -75%;
+                    transform: translate(-50%, -50%);
                   }
                 }
               }
@@ -487,13 +499,14 @@
               ul {
                 width: 100%;
                 display: flex;
-                padding: 0 18px;
+                padding: 0 18px 20px;
+                flex-direction: column;
                 li {
-                  width: 33.3%;
-                  padding: 55px 0;
+                  width: 100%;
+                  padding: 30px 0 0;
                   display: flex;
                   & :nth-child(1) {
-                    padding: 0 10%;
+                    padding: 0 3%;
                     display: flex;
                     align-items: center;
                   }
@@ -513,14 +526,19 @@
                       line-height: 1.47;
                       color: #555;
                       letter-spacing: -0.035em;
+                      br {
+                        display: none;
+                      }
                     }
+                  }
+                  .welfare-imgbox {
+                    width: 105px;
                   }
                 }
               }
             }
           }
           .family {
-            padding-top: 168px;
             padding-top: 168px;
             > span {
               font-weight: bold;
@@ -548,13 +566,14 @@
               ul {
                 width: 100%;
                 display: flex;
-                padding: 0 18px;
+                padding: 0 18px 20px;
+                flex-direction: column;
                 li {
-                  width: 33.3%;
-                  padding: 55px 0;
+                  width: 100%;
+                  padding: 30px 0 0;
                   display: flex;
                   & :nth-child(1) {
-                    padding: 0 10%;
+                    padding: 0 3%;
                     display: flex;
                     align-items: center;
                   }
@@ -574,7 +593,13 @@
                       line-height: 1.47;
                       color: #555;
                       letter-spacing: -0.035em;
+                      br {
+                        display: none;
+                      }
                     }
+                  }
+                  .welfare-imgbox {
+                    width: 105px;
                   }
                 }
               }
@@ -612,7 +637,7 @@
               padding: 66px 0;
               flex-wrap: wrap;
               li {
-                width: 33.3%;
+                width: 50%;
                 padding: 33px 0;
                 display: flex;
                 border-top: 1px solid #e5e5e5;
@@ -631,6 +656,7 @@
                     font-size: 1.25em;
                     line-height: 1.4;
                     letter-spacing: -0.035em;
+                    font-weight: bold;
                   }
                   p {
                     padding-top: 10px;
@@ -638,9 +664,11 @@
                     line-height: 1.47;
                     color: #555;
                     letter-spacing: -0.035em;
+                    br {
+                      display: none;
+                    }
                   }
                 }
-
                 &:nth-child(odd) {
                   background-color: #fafafa;
                 }
@@ -660,11 +688,11 @@
   main {
     .intro-container {
       width: 100%;
-      padding-top: 210px;
+      padding: 100px 5% 0;
       .intro-content {
         max-width: 1320px;
         margin: 0 auto;
-        padding-bottom: 83px;
+        padding-bottom: 63px;
         .abox {
           div {
             display: inline-block;
@@ -688,7 +716,7 @@
             font-size: 18px;
           }
           .second {
-            font-size: 14px;
+            font-size: 11px;
           }
           .second:after {
             font-family: "xeicon";
@@ -701,10 +729,13 @@
             color: #222;
             font-size: 18px;
           }
+          .third {
+            font-size: 11px;
+          }
         }
         h3 {
-          padding-top: 57px;
-          font-size: 50px;
+          padding-top: 60px;
+          font-size: 25px;
           font-weight: 700;
           line-height: 1.36;
           letter-spacing: -0.02rem;
@@ -724,6 +755,7 @@
     .intro-menu-container {
       width: 100%;
       border-bottom: 1px solid #e5e5e5;
+      padding: 0 5%;
       .intro-menu-content {
         max-width: 1320px;
         margin: 0 auto;
@@ -732,8 +764,8 @@
           display: flex;
           li {
             color: #ccc;
-            padding-right: 70px;
-            font-size: 20px;
+            padding-right: 37px;
+            font-size: 15px;
             font-weight: 700;
             a {
               display: block;
@@ -767,22 +799,21 @@
     }
     > .intro-h-container {
       width: 100%;
-      padding-top: 100px;
-      padding-bottom: 100px;
+      padding: 60px 5% 50px;
       > .intro-h-content {
         max-width: 1320px;
         margin: 0 auto;
         text-align: center;
-        padding-bottom: 60px;
+        padding-bottom: 30px;
         border-bottom: 1px solid #e5e5e5;
         h4 {
-          font-size: 56px;
+          font-size: 30px;
           letter-spacing: -0.00892em;
           line-height: 1.2;
         }
         p {
-          padding-top: 28px;
-          font-size: 24px;
+          padding-top: 20px;
+          font-size: 16px;
           letter-spacing: -0.035em;
           line-height: 1.645;
           span {
@@ -794,45 +825,51 @@
         max-width: 1320px;
         margin: 0 auto;
         .chaeum {
-          padding: 62px 0 78px;
+          padding: 42px 0 28px;
           display: flex;
+          flex-direction: column;
           border-bottom: 1px solid #e5e5e5;
           .chaeum-left {
-            width: 50%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             span {
-              font-size: 2.71em;
+              font-size: 2.21em;
               letter-spacing: -0.0349em;
               line-height: 1.3;
               font-weight: bold;
+              padding-bottom: 20px;
               em {
                 color: #faa61a;
                 font-style: normal;
               }
             }
             p {
-              font-size: 1.1875em;
+              font-size: 0.8875em;
               letter-spacing: -0.00352em;
               line-height: 1.47;
               color: #444;
-              margin-top: 15px;
+              margin-top: 0px;
+              br {
+                display: none;
+              }
             }
           }
           .chaeum-right {
-            width: 50%;
-            padding: 0 92px 0 30px;
+            width: 100%;
+            padding: 0px;
             ul {
               display: flex;
               flex-wrap: wrap;
               justify-content: space-between;
               li {
-                width: 20%;
-                margin: 27px 6%;
+                width: 30%;
+                margin: 27px 1%;
                 div {
                   position: relative;
-                  padding-top: 100%;
+                  margin: 0 25%;
+                  padding-top: 46%;
                   background: #f8f8f8;
                   border-radius: 50%;
                   border-top-right-radius: 0;
@@ -840,7 +877,7 @@
                 p {
                   margin-top: 18px;
                   text-align: center;
-                  font-size: 1.06em;
+                  font-size: 0.86em;
                   line-height: 1.47;
                   color: #555;
                   letter-spacing: -0.035em;
@@ -925,13 +962,14 @@
           padding: 50px 0;
           border-bottom: 1px solid #e5e5e5;
           display: flex;
+          flex-direction: column;
           .tuium-left {
-            width: 50%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             span {
-              font-size: 2.71em;
+              font-size: 2.21em;
               letter-spacing: -0.0349em;
               line-height: 1.3;
               font-weight: bold;
@@ -941,7 +979,7 @@
               }
             }
             p {
-              font-size: 1.1875em;
+              font-size: 0.8875em;
               letter-spacing: -0.00352em;
               line-height: 1.47;
               color: #444;
@@ -954,13 +992,17 @@
           }
           .tuium-right {
             position: relative;
-            width: 50%;
+            width: 100%;
+            padding-top: 50px;
+            img {
+              width: 100%;
+            }
             .tuium-absolute {
               position: absolute;
-              width: 25%;
-              top: 50%;
+              width: 20%;
+              top: 7.5%;
               transform: translate(-50%, -50%);
-              left: 0;
+              left: 85%;
               background-color: #fff;
               border-radius: 50%;
               box-shadow: 7.4px 8.2px 23.5px 0.5px rgb(0 0 0 / 16%);
@@ -978,23 +1020,24 @@
               }
             }
             .tuium-background {
-              border-bottom-right-radius: 140px;
+              border-bottom-right-radius: 10.1449vw;
               overflow: hidden;
             }
           }
         }
         .jiwon {
-          padding: 100px 0 70px;
+          padding: 170px 0 70px;
           border-bottom: 1px solid #e5e5e5;
           display: flex;
+          flex-direction: column;
           .jiwon-left {
-            width: 37%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             margin-top: -95px;
             span {
-              font-size: 2.71em;
+              font-size: 2.21em;
               letter-spacing: -0.0349em;
               line-height: 1.3;
               font-weight: bold;
@@ -1004,11 +1047,14 @@
               }
             }
             p {
-              font-size: 1.1875em;
+              font-size: 0.9875em;
               letter-spacing: -0.00352em;
               line-height: 1.47;
               color: #444;
               margin-top: 15px;
+              br {
+                display: none;
+              }
               em {
                 font-style: normal;
                 font-weight: bold;
@@ -1016,47 +1062,57 @@
             }
           }
           .jiwon-right {
-            width: 63%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             ul {
+              width: 100%;
               display: flex;
               justify-content: space-between;
-              padding-bottom: 45px;
+              padding-top: 40px;
+              margin: 0 -40px;
+              flex-wrap: wrap;
               li {
+                width: 50%;
                 padding: 0 40px;
                 position: relative;
                 .jiwon-imgbox {
                   text-align: center;
                 }
                 .jiwon-txtbox {
-                  padding-top: 50px;
+                  padding-top: 10px;
+                  padding-bottom: 20px;
                   text-align: center;
                   span {
-                    font-size: 1.25em;
+                    font-size: 1.05em;
                     font-weight: 600;
                     line-height: 1.4;
                     letter-spacing: -0.035em;
                   }
                   p {
                     margin-top: 8px;
-                    font-size: 1.06em;
+                    font-size: 0.86em;
                     line-height: 1.47;
                     color: #555;
                     letter-spacing: -0.035em;
                     font-style: normal;
+                    padding-bottom: 10px;
+                  }
+                  br {
+                    display: none;
                   }
                 }
                 .jiwon-first {
+                  padding: 45px 0;
                   &:before {
                     content: "";
                     background-color: #f8f8f8;
                     position: absolute;
-                    width: calc(200% - 50px);
-                    top: -20%;
+                    width: calc(180%);
+                    top: 0%;
                     left: 10%;
-                    padding-top: 58.55%;
+                    padding-top: 35.55%;
                     background: #f8f8f8;
                     border-radius: 66px;
                     border-top-right-radius: 0;
@@ -1064,34 +1120,64 @@
                   }
                 }
                 .jiwon-second {
+                  padding: 45px 0;
                   &:before {
                     content: "or";
                     position: absolute;
-                    top: 6.57%;
-                    left: 0;
-                    transform: translateX(-50%);
+                    top: 25%;
+                    left: 2.5%;
+                    transform: translate(-50%, -50%);
                   }
                 }
                 .jiwon-third {
+                  position: relative;
+                  width: 40%;
+                  padding-top: 40%;
+                  background: #f8f8f8;
+                  border-radius: 50%;
+                  border-top-right-radius: 0;
+                  display: flex;
+                  align-items: center;
+                  margin: 0 auto;
+                  img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                  }
                   &:before {
-                    content: "\e913";
-                    font-family: "xeicon";
+                    content: "";
                     font-size: 19px;
                     position: absolute;
-                    top: 6.57%;
-                    left: 0;
-                    transform: translateX(-50%);
+                    top: 50%;
+                    left: -75%;
+                    transform: translate(-50%, -50%);
                   }
                 }
                 .jiwon-fourth {
+                  position: relative;
+                  width: 40%;
+                  padding-top: 40%;
+                  background: #f8f8f8;
+                  border-radius: 50%;
+                  border-top-right-radius: 0;
+                  display: flex;
+                  align-items: center;
+                  margin: 0 auto;
+                  img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                  }
                   &:before {
                     content: "\e913";
                     font-family: "xeicon";
                     font-size: 19px;
                     position: absolute;
-                    top: 6.57%;
-                    left: 0;
-                    transform: translateX(-50%);
+                    top: 50%;
+                    left: -105%;
+                    transform: translate(-50%, -50%);
                   }
                 }
               }
@@ -1114,11 +1200,11 @@
         }
         .welfare {
           .refresh {
-            padding-top: 168px;
+            padding-top: 108px;
             > span {
               font-weight: bold;
               padding-bottom: 35px;
-              font-size: 2.34em;
+              font-size: 1.84em;
               letter-spacing: -0.035em;
               line-height: 1.3;
               display: inline-block;
@@ -1141,13 +1227,14 @@
               ul {
                 width: 100%;
                 display: flex;
-                padding: 0 18px;
+                padding: 0 18px 20px;
+                flex-direction: column;
                 li {
-                  width: 33.3%;
-                  padding: 55px 0;
+                  width: 100%;
+                  padding: 30px 0 0;
                   display: flex;
                   & :nth-child(1) {
-                    padding: 0 10%;
+                    padding: 0 3%;
                     display: flex;
                     align-items: center;
                   }
@@ -1157,29 +1244,35 @@
                     justify-content: center;
                     span {
                       padding: 0%;
-                      font-size: 1.25em;
+                      font-size: 1.05em;
                       line-height: 1.4;
                       letter-spacing: -0.035em;
+                      font-weight: bold;
                     }
                     p {
                       padding-top: 10px;
-                      font-size: 1.06em;
+                      font-size: 0.86em;
                       line-height: 1.47;
                       color: #555;
                       letter-spacing: -0.035em;
+                      br {
+                        display: none;
+                      }
                     }
+                  }
+                  .welfare-imgbox {
+                    width: 105px;
                   }
                 }
               }
             }
           }
           .family {
-            padding-top: 168px;
-            padding-top: 168px;
+            padding-top: 108px;
             > span {
               font-weight: bold;
               padding-bottom: 35px;
-              font-size: 2.34em;
+              font-size: 1.84em;
               letter-spacing: -0.035em;
               line-height: 1.3;
               display: inline-block;
@@ -1202,13 +1295,14 @@
               ul {
                 width: 100%;
                 display: flex;
-                padding: 0 18px;
+                padding: 0 18px 20px;
+                flex-direction: column;
                 li {
-                  width: 33.3%;
-                  padding: 55px 0;
+                  width: 100%;
+                  padding: 30px 0 0;
                   display: flex;
                   & :nth-child(1) {
-                    padding: 0 10%;
+                    padding: 0 3%;
                     display: flex;
                     align-items: center;
                   }
@@ -1218,17 +1312,24 @@
                     justify-content: center;
                     span {
                       padding: 0%;
-                      font-size: 1.25em;
+                      font-size: 1.05em;
                       line-height: 1.4;
                       letter-spacing: -0.035em;
+                      font-weight: bold;
                     }
                     p {
                       padding-top: 10px;
-                      font-size: 1.06em;
+                      font-size: 0.86em;
                       line-height: 1.47;
                       color: #555;
                       letter-spacing: -0.035em;
+                      br {
+                        display: none;
+                      }
                     }
+                  }
+                  .welfare-imgbox {
+                    width: 105px;
                   }
                 }
               }
@@ -1236,11 +1337,11 @@
           }
         }
         .benefit {
-          padding-top: 168px;
+          padding-top: 108px;
           > span {
             font-weight: bold;
-            padding-bottom: 35px;
-            font-size: 2.34em;
+            padding-bottom: 25px;
+            font-size: 1.84em;
             letter-spacing: -0.035em;
             line-height: 1.3;
             display: inline-block;
@@ -1263,16 +1364,16 @@
             ul {
               width: 100%;
               display: flex;
-              padding: 66px 0;
+              padding: 26px 0;
               flex-wrap: wrap;
               li {
-                width: 33.3%;
-                padding: 33px 0;
+                width: 100%;
+                padding: 23px 0;
                 display: flex;
                 border-top: 1px solid #e5e5e5;
                 border-left: 1px solid #e5e5e5;
                 & :nth-child(1) {
-                  padding: 0 10%;
+                  padding: 0 5%;
                   display: flex;
                   align-items: center;
                 }
@@ -1282,19 +1383,22 @@
                   justify-content: center;
                   span {
                     padding: 0%;
-                    font-size: 1.25em;
+                    font-size: 1.05em;
                     line-height: 1.4;
                     letter-spacing: -0.035em;
+                    font-weight: bold;
                   }
                   p {
                     padding-top: 10px;
-                    font-size: 1.06em;
+                    font-size: 0.86em;
                     line-height: 1.47;
                     color: #555;
                     letter-spacing: -0.035em;
+                    br {
+                      display: none;
+                    }
                   }
                 }
-
                 &:nth-child(odd) {
                   background-color: #fafafa;
                 }

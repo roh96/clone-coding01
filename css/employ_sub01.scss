@@ -330,7 +330,7 @@ main {
         }
       }
       .jiwon {
-        padding: 100px 0 70px;
+        padding: 70px 0 70px;
         border-bottom: 1px solid #e5e5e5;
         display: flex;
         .jiwon-left {
@@ -395,14 +395,15 @@ main {
                 }
               }
               .jiwon-first {
+                padding: 45px 0;
                 &:before {
                   content: "";
                   background-color: #f8f8f8;
                   position: absolute;
                   width: calc(200% - 50px);
-                  top: -20%;
+                  top: 0%;
                   left: 10%;
-                  padding-top: 58.55%;
+                  padding-top: 70.55%;
                   background: #f8f8f8;
                   border-radius: 66px;
                   border-top-right-radius: 0;
@@ -410,34 +411,63 @@ main {
                 }
               }
               .jiwon-second {
+                padding: 45px 0;
                 &:before {
                   content: "or";
                   position: absolute;
-                  top: 6.57%;
+                  top: 20.57%;
                   left: 0;
                   transform: translateX(-50%);
                 }
               }
               .jiwon-third {
+                position: relative;
+                padding-top: 100%;
+                background: #f8f8f8;
+                border-radius: 50%;
+                border-top-right-radius: 0;
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                img {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                }
                 &:before {
                   content: "\e913";
                   font-family: "xeicon";
                   font-size: 19px;
                   position: absolute;
-                  top: 6.57%;
-                  left: 0;
-                  transform: translateX(-50%);
+                  top: 50%;
+                  left: -20%;
+                  transform: translate(-50%, -50%);
                 }
               }
               .jiwon-fourth {
+                position: relative;
+                padding-top: 100%;
+                background: #f8f8f8;
+                border-radius: 50%;
+                border-top-right-radius: 0;
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                img {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                }
                 &:before {
                   content: "\e913";
                   font-family: "xeicon";
                   font-size: 19px;
                   position: absolute;
-                  top: 6.57%;
-                  left: 0;
-                  transform: translateX(-50%);
+                  top: 50%;
+                  left: -20%;
+                  transform: translate(-50%, -50%);
                 }
               }
             }

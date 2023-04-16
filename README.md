@@ -3,7 +3,7 @@
 ### :memo: 개요
 - Hecto Innovation이라는 페이지를 클론 코딩한 프로젝트입니다.
 
-### ⚙️: 기술
+### ⚙️ 기술
 - HTML
 - CSS
 - JavaScript

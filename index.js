@@ -18,6 +18,15 @@ function head() {
     $("header > div > div > nav > ul > li").eq(idx).addClass("active");
     //$("header a").eq(idx).css("color", "blue");
   });
+
+  $("header > div > div > .open-sitemap").click(function () {
+    $("header > div > div > .hammenu").addClass("burgeron");
+  });
+  $("header > div > div > .hammenu > .hambox > .haminnerbox > .burger").click(
+    function () {
+      $("header > div > div > .hammenu").removeClass("burgeron");
+    }
+  );
 }
 
 //특정컨텐츠 스크롤반응

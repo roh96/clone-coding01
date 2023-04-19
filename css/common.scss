@@ -186,6 +186,7 @@ header {
         padding: 0;
         background-color: transparent;
         border: none;
+        cursor: pointer;
         img {
           width: 100%;
         }
@@ -198,8 +199,8 @@ header {
         top: 0%;
         right: -30%;
         position: fixed;
+        opacity: 0;
         .hambox {
-          opacity: 0;
           padding: 40px 130px;
           margin: 0 auto;
           display: flex;
@@ -211,6 +212,7 @@ header {
             align-items: center;
             justify-content: flex-end;
             .burger {
+              cursor: pointer;
               width: 35px;
               height: 25px;
               position: relative;
@@ -247,44 +249,10 @@ header {
         }
       }
       .burgeron {
-        transition: 0.5s 0.5s;
-        transform: translateX(-100%);
+        transition: 0.5s;
+        right: 0;
+        opacity: 1;
         .hambox {
-          transition: 0.5s;
-          opacity: 1;
-          padding: 40px 130px;
-          margin: 0 auto;
-          display: flex;
-          flex-direction: column;
-          .haminnerbox {
-            width: 100%;
-            height: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            .burger {
-              width: 35px;
-              height: 25px;
-              position: relative;
-              span {
-                position: absolute;
-                width: 100%;
-                border: 1px solid #000;
-                height: 4px;
-                background-color: rgb(124, 124, 125);
-                border-radius: 4px;
-                &:nth-child(1) {
-                  top: 2px;
-                }
-                &:nth-child(2) {
-                  top: 10px;
-                }
-                &:nth-child(3) {
-                  bottom: 2px;
-                }
-              }
-            }
-          }
           .burger-submenu {
             width: 100%;
             height: 150px;

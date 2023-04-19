@@ -1,4 +1,5 @@
 @import "./common_sub.scss";
+
 body {
   margin: 0;
   padding: 0;
@@ -397,13 +398,13 @@ main {
             }
           }*/
           .fintro-first {
-            position: relative;
             div {
+              position: relative;
               border-top-right-radius: 0%;
               &:before {
                 position: absolute;
                 font-size: 3.038vw;
-                top: 25%;
+                top: 50%;
                 transform: translate(-50%, -50%);
                 font-family: "xeicon";
                 content: "\e94c";
@@ -420,13 +421,13 @@ main {
             }
           }
           .fintro-second {
-            position: relative;
             div {
+              position: relative;
               border-bottom-right-radius: 0%;
               &:before {
                 position: absolute;
                 font-size: 3.038vw;
-                top: 25%;
+                top: 50%;
                 transform: translate(-50%, -50%);
                 font-family: "xeicon";
                 content: "\ea24";
@@ -443,13 +444,13 @@ main {
             }
           }
           .fintro-third {
-            position: relative;
             div {
+              position: relative;
               border-top-right-radius: 0%;
               &:before {
                 position: absolute;
                 font-size: 3.038vw;
-                top: 25%;
+                top: 50%;
                 transform: translate(-50%, -50%);
                 font-family: "xeicon";
                 content: "\eaed";
@@ -466,13 +467,13 @@ main {
             }
           }
           .fintro-fourth {
-            position: relative;
             div {
+              position: relative;
               border-bottom-right-radius: 0%;
               &:before {
                 position: absolute;
                 font-size: 3.038vw;
-                top: 25%;
+                top: 50%;
                 transform: translate(-50%, -50%);
                 font-family: "xeicon";
                 content: "\eb99";
@@ -489,13 +490,13 @@ main {
             }
           }
           .fintro-fifth {
-            position: relative;
             div {
+              position: relative;
               border-top-right-radius: 0%;
               &:before {
                 position: absolute;
                 font-size: 3.038vw;
-                top: 25%;
+                top: 50%;
                 transform: translate(-50%, -50%);
                 font-family: "xeicon";
                 content: "\eb84";

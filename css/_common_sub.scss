@@ -1,6 +1,7 @@
 @import url("./font.css");
 
-$mobile: 400px;
+$mobile2: 360px;
+$mobile: 540px;
 $tablet: 800px;
 $pc: 1260px;
 @mixin device($min, $max) {
@@ -63,6 +64,7 @@ header {
   .header-container {
     width: 100%;
     padding-top: 40px;
+    position: relative;
     .header-main-container {
       padding: 0 30px;
       width: 100%;
@@ -96,7 +98,88 @@ header {
           opacity: 1;
         }
       }
-      button.open-sitemap {
+      nav {
+        margin-left: auto;
+        ul {
+          display: flex;
+          li {
+            padding: 0 40px;
+            font-size: 20px;
+            font-weight: bold;
+            a {
+              color: #000;
+              transition: 0.5;
+            }
+            &.companyli:hover,
+            &.companyli.active > a {
+              color: #faa61a;
+            }
+            &.companyli:hover .company {
+              height: 230px;
+              padding: 18px 30px;
+            }
+            &.serviceli:hover,
+            &.serviceli.active > a {
+              color: #faa61a;
+            }
+            &.employli:hover,
+            &.employli.active > a {
+              color: #faa61a;
+            }
+            &.employli:hover .employ {
+              height: 130px;
+              padding: 18px 30px;
+            }
+            &.companyli {
+              position: relative;
+              div.company {
+                position: absolute;
+                top: 40px;
+                left: 40px;
+                height: 0px;
+                border-radius: 30px;
+                border-top-left-radius: 0;
+                background-color: #faa61a;
+                padding: 0px 30px;
+                flex-direction: column;
+                overflow: hidden;
+                transition: 0.5s;
+                a {
+                  color: #fff;
+                  font-weight: 400;
+                  font-size: 1rem;
+                  white-space: nowrap;
+                  line-height: 3rem;
+                }
+              }
+            }
+            &.employli {
+              position: relative;
+              div.employ {
+                position: absolute;
+                top: 40px;
+                left: 40px;
+                height: 0px;
+                border-radius: 30px;
+                border-top-left-radius: 0;
+                background-color: #faa61a;
+                padding: 0px 30px;
+                flex-direction: column;
+                overflow: hidden;
+                transition: 0.5s;
+                a {
+                  color: #fff;
+                  font-weight: 400;
+                  font-size: 1rem;
+                  white-space: nowrap;
+                  line-height: 3rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      .open-sitemap {
         width: 35px;
         height: 29px;
         margin-left: 150px;
@@ -107,82 +190,76 @@ header {
           width: 100%;
         }
       }
-    }
-    nav {
-      margin-left: auto;
-      ul {
-        display: flex;
-        li {
-          padding: 0 40px;
-          font-size: 20px;
-          font-weight: bold;
-          a {
-            color: #000;
-            transition: 0.5;
-          }
-          &.companyli:hover,
-          &.companyli.active > a {
-            color: #faa61a;
-          }
-          &.companyli:hover .company {
-            height: 230px;
-            padding: 18px 30px;
-          }
-          &.serviceli:hover,
-          &.serviceli.active > a {
-            color: #faa61a;
-          }
-          &.employli:hover,
-          &.employli.active > a {
-            color: #faa61a;
-          }
-          &.employli:hover .employ {
-            height: 130px;
-            padding: 18px 30px;
-          }
-          &.companyli {
-            position: relative;
-            div.company {
-              position: absolute;
-              top: 40px;
-              left: 40px;
-              height: 0px;
-              border-radius: 30px;
-              border-top-left-radius: 0;
-              background-color: #faa61a;
-              padding: 0px 30px;
-              flex-direction: column;
-              overflow: hidden;
-              transition: 0.5s;
-              a {
-                color: #fff;
-                font-weight: 400;
-                font-size: 1rem;
-                white-space: nowrap;
-                line-height: 3rem;
+      .hammenu {
+        transition: 0.5s;
+        width: 30%;
+        height: 100vh;
+        background-color: #000;
+        top: 0%;
+        right: -30%;
+        position: fixed;
+        opacity: 0;
+        .hambox {
+          padding: 40px 130px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          .haminnerbox {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .burger {
+              cursor: pointer;
+              width: 35px;
+              height: 25px;
+              position: relative;
+              span {
+                position: absolute;
+                width: 100%;
+                border: 1px solid #000;
+                height: 4px;
+                background-color: rgb(124, 124, 125);
+                border-radius: 4px;
+                &:nth-child(1) {
+                  top: 2px;
+                }
+                &:nth-child(2) {
+                  top: 10px;
+                }
+                &:nth-child(3) {
+                  bottom: 2px;
+                }
               }
             }
           }
-          &.employli {
-            position: relative;
-            div.employ {
-              position: absolute;
-              top: 40px;
-              left: 40px;
-              height: 0px;
-              border-radius: 30px;
-              border-top-left-radius: 0;
-              background-color: #faa61a;
-              padding: 0px 30px;
-              flex-direction: column;
-              overflow: hidden;
-              transition: 0.5s;
+          .burger-submenu {
+            width: 100%;
+            height: 150px;
+            .burger-submenus {
+              padding: 30px 0;
               a {
-                color: #fff;
-                font-weight: 400;
-                font-size: 1rem;
-                white-space: nowrap;
-                line-height: 3rem;
+                font-size: 2rem;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+      .burgeron {
+        transition: 0.5s;
+        right: 0;
+        opacity: 1;
+        .hambox {
+          .burger-submenu {
+            width: 100%;
+            height: 150px;
+            .burger-submenus {
+              padding: 30px 0;
+              a {
+                font-size: 2rem;
+                color: white;
               }
             }
           }

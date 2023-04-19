@@ -20,7 +20,13 @@
 ### 💻 구현 화면
 
 |인트로|컨텐츠업|
-|<img width:"80%" src="https://user-images.githubusercontent.com/74894952/232991777-6844882a-968a-468c-9678-cc8f1564ece4.gif"/>|<img width:"80%" src="https://user-images.githubusercontent.com/74894952/232991788-35b17562-0406-4857-9f86-cac8da82a3e3.gif"/>|
+|---|---|
+|<img width="100%" src="https://user-images.githubusercontent.com/74894952/232991777-6844882a-968a-468c-9678-cc8f1564ece4.gif"/>|<img width="100%" src="https://user-images.githubusercontent.com/74894952/232991788-35b17562-0406-4857-9f86-cac8da82a3e3.gif"/>|
+
 |업버튼|네비&버거|
 |---|---|
-|<img width:"80%" src="https://user-images.githubusercontent.com/74894952/232991792-cd3f1540-953c-40a5-8342-0f60675b8370.gif"/>|<img width:"80%" src="https://user-images.githubusercontent.com/74894952/232991798-703422cc-6419-4b1a-ba5c-b85aa8601246.gif"/>|
+|<img width="100%" src="https://user-images.githubusercontent.com/74894952/232991792-cd3f1540-953c-40a5-8342-0f60675b8370.gif"/>|<img width="100%" src="https://user-images.githubusercontent.com/74894952/232991798-703422cc-6419-4b1a-ba5c-b85aa8601246.gif"/>|
+
+|인터벌|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+|---|---|
+|<img width="100%" src="https://user-images.githubusercontent.com/74894952/233001164-e5690bf6-640b-4c7a-a3a8-e052559a4426.gif"/>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|

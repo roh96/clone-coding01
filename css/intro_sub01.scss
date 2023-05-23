@@ -1,5 +1,4 @@
 @import "./common_sub.scss";
-
 body {
   margin: 0;
   padding: 0;
@@ -18,10 +17,14 @@ main {
         }
         .first {
           font-size: 14px;
-        }
-        .first:before {
-          font-family: "xeicon";
-          content: "\e900";
+          a {
+            display: inline-block;
+            &:before {
+              font-size: 16px;
+              font-family: "xeicon";
+              content: "\e900";
+            }
+          }
         }
         .first:after {
           font-family: "xeicon";
@@ -47,6 +50,9 @@ main {
           margin: 0px 7px 0 5px;
           color: #222;
           font-size: 18px;
+        }
+        .third {
+          font-size: 14px;
         }
       }
       h3 {
@@ -398,12 +404,13 @@ main {
             }
           }*/
           .fintro-first {
+            position: relative;
             div {
-              position: relative;
               border-top-right-radius: 0%;
+              position: relative;
               &:before {
                 position: absolute;
-                font-size: 3.038vw;
+                font-size: 48px;
                 top: 50%;
                 transform: translate(-50%, -50%);
                 font-family: "xeicon";
@@ -421,12 +428,13 @@ main {
             }
           }
           .fintro-second {
+            position: relative;
             div {
-              position: relative;
               border-bottom-right-radius: 0%;
+              position: relative;
               &:before {
                 position: absolute;
-                font-size: 3.038vw;
+                font-size: 48px;
                 top: 50%;
                 transform: translate(-50%, -50%);
                 font-family: "xeicon";
@@ -444,12 +452,13 @@ main {
             }
           }
           .fintro-third {
+            position: relative;
             div {
-              position: relative;
               border-top-right-radius: 0%;
+              position: relative;
               &:before {
                 position: absolute;
-                font-size: 3.038vw;
+                font-size: 48px;
                 top: 50%;
                 transform: translate(-50%, -50%);
                 font-family: "xeicon";
@@ -467,12 +476,13 @@ main {
             }
           }
           .fintro-fourth {
+            position: relative;
             div {
-              position: relative;
               border-bottom-right-radius: 0%;
+              position: relative;
               &:before {
                 position: absolute;
-                font-size: 3.038vw;
+                font-size: 48px;
                 top: 50%;
                 transform: translate(-50%, -50%);
                 font-family: "xeicon";
@@ -490,12 +500,13 @@ main {
             }
           }
           .fintro-fifth {
+            position: relative;
             div {
-              position: relative;
               border-top-right-radius: 0%;
+              position: relative;
               &:before {
                 position: absolute;
-                font-size: 3.038vw;
+                font-size: 48px;
                 top: 50%;
                 transform: translate(-50%, -50%);
                 font-family: "xeicon";

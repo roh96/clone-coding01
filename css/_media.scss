@@ -1595,7 +1595,7 @@
       }
       .introduce-container {
         width: 100%;
-        padding: 87px 0px 30px;
+        padding: 117px 0px 70px;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -1604,17 +1604,18 @@
           text-align: center;
           position: relative;
           .h2txt {
-            font-size: 24px;
+            font-size: 40px;
             letter-spacing: -0.0514em;
-            padding-bottom: 30px;
+            padding-bottom: 40px;
             &:after {
               content: "VISION";
               position: absolute;
               left: 50%;
-              top: -50%;
+              top: -100%;
               color: #c5c5c5;
               //bottom: 20px;
-              font-size: 80px;
+
+              font-size: 170px;
               z-index: 97;
             }
           }
@@ -1627,7 +1628,7 @@
         }
         .anime-container {
           width: 1320px;
-          padding: 24px 0 59px;
+          padding: 24px 0 189px;
           //display: center;
           flex-direction: column;
           text-align: center;
@@ -1702,8 +1703,8 @@
           position: relative;
           flex-direction: column;
           > .intro01 {
-            width: 75vw;
-            height: 75vw;
+            width: 85vw;
+            height: 85vw;
             border-bottom-right-radius: 20%;
             background-image: url("../img/main_company_img_01.jpg");
             background-size: cover;
@@ -1735,8 +1736,8 @@
             }
           }
           > .intro02 {
-            width: 75vw;
-            height: 75vw;
+            width: 85vw;
+            height: 85vw;
             border-bottom-right-radius: 20%;
             background-image: url("../img/main_company_img_02.jpg");
             background-size: cover;
@@ -1770,7 +1771,7 @@
           > div.svg1 {
             position: absolute;
             width: 30vw;
-            top: 6vw;
+            top: 1vw;
             left: 0vw;
             opacity: 0.15;
             z-index: -5;
@@ -1781,8 +1782,8 @@
           > div.svg2 {
             position: absolute;
             width: 55vw;
-            bottom: 4vw;
-            right: -12.5vw;
+            bottom: -10vw;
+            right: -16.5vw;
             opacity: 0.15;
             z-index: -5;
           }
@@ -1812,12 +1813,11 @@
             //align-items: center;
             border-right: none;
             > div {
-              width: 90%;
+              width: 100%;
               display: flex;
               padding: 0;
-              margin: 0 auto;
               > div {
-                width: 70px;
+                width: 100px;
                 font-size: 32px;
                 display: flex;
                 justify-content: center;
@@ -1826,7 +1826,7 @@
               > h2 {
                 width: 32.5%;
                 margin-top: 0px;
-                font-size: 20px;
+                font-size: 25px;
                 letter-spacing: -0.0116rem;
                 font-weight: 600;
                 opacity: 0.5;
@@ -1835,7 +1835,7 @@
                 align-items: center;
               }
               > p {
-                width: calc(67.5% - 70px);
+                width: calc(67.5% - 100px);
                 //display: inline-block;
                 font-size: 15px;
                 letter-spacing: -0.0175rem;
@@ -1844,8 +1844,6 @@
                 opacity: 0.85;
                 margin-top: 0px;
                 text-align: left;
-                display: block;
-                padding-left: 20px;
               }
             }
             &::before {
@@ -1863,7 +1861,7 @@
         }
       }
       .news-container {
-        padding: 40px 0 45px;
+        padding: 70px 0 75px;
         max-width: none;
         article {
           width: 100%;
@@ -1871,7 +1869,7 @@
           position: relative;
           max-width: none;
           > h2 {
-            font-size: 24px;
+            font-size: 40px;
             letter-spacing: -0.0514em;
             > em {
               font-weight: 100;
@@ -1880,8 +1878,8 @@
           }
           > div.clicknews {
             position: absolute;
-            height: 65px;
-            padding: 10px;
+            height: 77px;
+            padding: 13px;
             font-size: 15px;
             letter-spacing: -0.0175rem;
             border: 1px solid #faa61a;
@@ -1890,7 +1888,7 @@
             border-radius: 100%;
             top: 15%;
             right: auto;
-            left: 100px;
+            left: 120px;
             box-sizing: border-box;
             display: flex;
             align-items: center;
@@ -1904,14 +1902,14 @@
           > div.libox {
             width: 100%;
             overflow-x: auto;
-            padding-top: 70px;
+            padding-top: 150px;
             > ul {
               width: 15000px;
               display: flex;
               justify-content: flex-start;
               > li {
                 width: 300px;
-                padding-left: 0px;
+                padding-left: 40px;
                 &:first-child {
                   padding-left: 0;
                 }
@@ -1988,7 +1986,7 @@
           > div {
             width: 100%;
             color: #fff;
-            padding: 70px 0 127px;
+            padding: 100px 0 167px;
             > div.spanbox {
               padding-top: 0px;
               > p {
@@ -1998,7 +1996,7 @@
               > div {
                 position: relative;
                 padding-top: 20px;
-                font-size: 24px;
+                font-size: 40px;
                 letter-spacing: -0.025rem;
 
                 > span {
@@ -2080,20 +2078,20 @@
             > div.pbox {
               padding-top: 18px;
               > span {
-                font-size: 16px;
+                font-size: 20px;
                 display: block;
                 letter-spacing: -0.0104rem;
-                line-height: 1.26;
+                line-height: 1.66;
                 &:last-child {
                   padding-top: 18px;
                 }
               }
               > p {
-                font-size: 14px;
-                line-height: 1.26;
+                font-size: 15px;
+                line-height: 1.66;
                 letter-spacing: -0.0166rem;
                 opacity: 0.6;
-                padding-top: 8px;
+                padding-top: 10px;
               }
             }
           }

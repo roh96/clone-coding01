@@ -105,12 +105,8 @@ function init() {
     },*/
     breakpoints: {
       360: {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 0,
-      },
-      541: {
-        slidesPerView: 2,
-        spaceBetween: 20,
       },
       801: {
         slidesPerView: 3,

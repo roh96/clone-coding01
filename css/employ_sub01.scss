@@ -17,10 +17,14 @@ main {
         }
         .first {
           font-size: 14px;
-        }
-        .first:before {
-          font-family: "xeicon";
-          content: "\e900";
+          a {
+            display: inline-block;
+            &:before {
+              font-size: 16px;
+              font-family: "xeicon";
+              content: "\e900";
+            }
+          }
         }
         .first:after {
           font-family: "xeicon";
@@ -46,6 +50,9 @@ main {
           margin: 0px 7px 0 5px;
           color: #222;
           font-size: 18px;
+        }
+        .third {
+          font-size: 14px;
         }
       }
       h3 {

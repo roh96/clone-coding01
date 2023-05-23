@@ -196,9 +196,9 @@ header .header-container .header-main-container .hammenu {
   top: 0%;
   right: -30%;
   position: fixed;
-  opacity: 0;
 }
 header .header-container .header-main-container .hammenu .hambox {
+  opacity: 0;
   padding: 40px 130px;
   margin: 0 auto;
   display: flex;
@@ -212,10 +212,10 @@ header .header-container .header-main-container .hammenu .hambox .haminnerbox {
   justify-content: flex-end;
 }
 header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger {
-  cursor: pointer;
   width: 35px;
   height: 25px;
   position: relative;
+  cursor: pointer;
 }
 header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger span {
   position: absolute;
@@ -246,9 +246,45 @@ header .header-container .header-main-container .hammenu .hambox .burger-submenu
   color: white;
 }
 header .header-container .header-main-container .burgeron {
+  transition: 0.5s 0.5s;
+  transform: translateX(-100%);
+}
+header .header-container .header-main-container .burgeron .hambox {
   transition: 0.5s;
-  right: 0;
   opacity: 1;
+  padding: 40px 130px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+header .header-container .header-main-container .burgeron .hambox .haminnerbox {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .header-container .header-main-container .burgeron .hambox .haminnerbox .burger {
+  width: 35px;
+  height: 25px;
+  position: relative;
+}
+header .header-container .header-main-container .burgeron .hambox .haminnerbox .burger span {
+  position: absolute;
+  width: 100%;
+  border: 1px solid #000;
+  height: 4px;
+  background-color: rgb(124, 124, 125);
+  border-radius: 4px;
+}
+header .header-container .header-main-container .burgeron .hambox .haminnerbox .burger span:nth-child(1) {
+  top: 2px;
+}
+header .header-container .header-main-container .burgeron .hambox .haminnerbox .burger span:nth-child(2) {
+  top: 10px;
+}
+header .header-container .header-main-container .burgeron .hambox .haminnerbox .burger span:nth-child(3) {
+  bottom: 2px;
 }
 header .header-container .header-main-container .burgeron .hambox .burger-submenu {
   width: 100%;
@@ -405,6 +441,9 @@ footer > div.footer-container > div.right-container > div.right-bottom-container
 footer > div.footer-container > div.right-container > div.right-bottom-container > div.right-bottom-site:hover > div.arrow-box > div.gotosite {
   display: block;
 }
+footer > div.footer-container > div.right-container > div.right-bottom-container > div.right-bottom-site:hover > div.arrow-box > div.arrow {
+  transform: rotate(45deg);
+}
 footer > div.up-tool {
   position: absolute;
   width: 46px;
@@ -473,94 +512,93 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     left: 0%;
     width: 255px;
     height: 53px;
-    opacity: 0;
+    opacity: 1;
   }
   body header .header-container .header-main-container h1 .black {
     position: absolute;
     left: 0%;
     width: 255px;
     height: 53px;
-    opacity: 1;
+    opacity: 0;
   }
   body header .header-container .header-main-container nav {
     display: none;
-    /*margin-left: auto;
-      ul {
-        display: flex;
-      li {
-        padding: 0 40px;
-        font-size: 20px;
-        font-weight: bold;
-
-        a {
-          color: #fff;
-          transition: 0.5;
-        }
-        &.companyli:hover > a {
-          color: #faa61a;
-        }
-        &.companyli:hover .company {
-          height: 230px;
-          padding: 18px 30px;
-        }
-        &.serviceli:hover > a {
-          color: #faa61a;
-        }
-        &.employli:hover > a {
-          color: #faa61a;
-        }
-        &.employli:hover .employ {
-          height: 130px;
-          padding: 18px 30px;
-        }
-        &.companyli {
-          position: relative;
-          div.company {
-            position: absolute;
-            top: 40px;
-            left: 40px;
-            height: 0px;
-            border-radius: 30px;
-            border-top-left-radius: 0;
-            background-color: #faa61a;
-            padding: 0px 30px;
-            flex-direction: column;
-            overflow: hidden;
-            transition: 0.5s;
-            a {
-              color: #fff;
-              font-weight: 400;
-              font-size: 1rem;
-              white-space: nowrap;
-              line-height: 3rem;
-            }
-          }
-        }
-        &.employli {
-          position: relative;
-          div.employ {
-            position: absolute;
-            top: 40px;
-            left: 40px;
-            height: 0px;
-            border-radius: 30px;
-            border-top-left-radius: 0;
-            background-color: #faa61a;
-            padding: 0px 30px;
-            flex-direction: column;
-            overflow: hidden;
-            transition: 0.5s;
-            a {
-              color: #fff;
-              font-weight: 400;
-              font-size: 1rem;
-              white-space: nowrap;
-              line-height: 3rem;
-            }
-          }
-        }
-      }
-    }*/
+    margin-left: auto;
+  }
+  body header .header-container .header-main-container nav ul {
+    display: flex;
+  }
+  body header .header-container .header-main-container nav ul li {
+    padding: 0 40px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  body header .header-container .header-main-container nav ul li a {
+    color: #fff;
+    transition: 0.5;
+  }
+  body header .header-container .header-main-container nav ul li.companyli:hover > a, body header .header-container .header-main-container nav ul li.companyli.active > a {
+    color: #faa61a;
+  }
+  body header .header-container .header-main-container nav ul li.companyli:hover .company {
+    height: 230px;
+    padding: 18px 30px;
+  }
+  body header .header-container .header-main-container nav ul li.serviceli:hover > a, body header .header-container .header-main-container nav ul li.serviceli.active > a {
+    color: #faa61a;
+  }
+  body header .header-container .header-main-container nav ul li.employli:hover > a, body header .header-container .header-main-container nav ul li.employli.active > a {
+    color: #faa61a;
+  }
+  body header .header-container .header-main-container nav ul li.employli:hover .employ {
+    height: 130px;
+    padding: 18px 30px;
+  }
+  body header .header-container .header-main-container nav ul li.companyli {
+    position: relative;
+  }
+  body header .header-container .header-main-container nav ul li.companyli div.company {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    height: 0px;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    background-color: #faa61a;
+    padding: 0px 30px;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  body header .header-container .header-main-container nav ul li.companyli div.company a {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+    white-space: nowrap;
+    line-height: 3rem;
+  }
+  body header .header-container .header-main-container nav ul li.employli {
+    position: relative;
+  }
+  body header .header-container .header-main-container nav ul li.employli div.employ {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    height: 0px;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    background-color: #faa61a;
+    padding: 0px 30px;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  body header .header-container .header-main-container nav ul li.employli div.employ a {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+    white-space: nowrap;
+    line-height: 3rem;
   }
   body header .header-container .header-main-container .open-sitemap {
     width: 22px;
@@ -574,31 +612,32 @@ footer > div.up-tool:hover > div.xi-arrow-up {
   }
   body header .header-container .header-main-container .hammenu {
     transition: 0.5s;
-    width: 40%;
+    width: 50%;
     height: 100vh;
     background-color: #000;
     top: 0%;
-    right: -40%;
+    right: -50%;
     position: fixed;
   }
   body header .header-container .header-main-container .hammenu .hambox {
-    padding: 0;
-    width: 280px;
+    opacity: 0;
+    padding: 40px 130px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
   }
   body header .header-container .header-main-container .hammenu .hambox .haminnerbox {
+    width: 100%;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
   body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger {
-    cursor: pointer;
     width: 35px;
     height: 25px;
     position: relative;
+    cursor: pointer;
   }
   body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger span {
     position: absolute;
@@ -629,20 +668,15 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     color: white;
   }
   body header .header-container .header-main-container .burgeron {
+    transition: 0.5s 0.5s;
+    transform: translateX(-100%);
+  }
+  body header .header-container .header-main-container .burgeron .hambox {
     transition: 0.5s;
-    right: 0%;
     opacity: 1;
-  }
-  body header .header-container .header-main-container .burgeron .hambox .burger-submenu {
-    width: 100%;
-    height: 150px;
-  }
-  body header .header-container .header-main-container .burgeron .hambox .burger-submenu .burger-submenus {
-    padding: 30px 0;
-  }
-  body header .header-container .header-main-container .burgeron .hambox .burger-submenu .burger-submenus a {
-    font-size: 2rem;
-    color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
   body footer {
     width: 100%;
@@ -702,8 +736,84 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     height: 53px;
     opacity: 0;
   }
-  body header .header-container .header-main-container h1 .black {
-    opacity: 1;
+  body header .header-container .header-main-container nav {
+    display: none;
+    margin-left: auto;
+  }
+  body header .header-container .header-main-container nav ul {
+    display: flex;
+  }
+  body header .header-container .header-main-container nav ul li {
+    padding: 0 40px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  body header .header-container .header-main-container nav ul li a {
+    color: #fff;
+    transition: 0.5;
+  }
+  body header .header-container .header-main-container nav ul li.companyli:hover > a, body header .header-container .header-main-container nav ul li.companyli.active > a {
+    color: #faa61a;
+  }
+  body header .header-container .header-main-container nav ul li.companyli:hover .company {
+    height: 230px;
+    padding: 18px 30px;
+  }
+  body header .header-container .header-main-container nav ul li.serviceli:hover > a, body header .header-container .header-main-container nav ul li.serviceli.active > a {
+    color: #faa61a;
+  }
+  body header .header-container .header-main-container nav ul li.employli:hover > a, body header .header-container .header-main-container nav ul li.employli.active > a {
+    color: #faa61a;
+  }
+  body header .header-container .header-main-container nav ul li.employli:hover .employ {
+    height: 130px;
+    padding: 18px 30px;
+  }
+  body header .header-container .header-main-container nav ul li.companyli {
+    position: relative;
+  }
+  body header .header-container .header-main-container nav ul li.companyli div.company {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    height: 0px;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    background-color: #faa61a;
+    padding: 0px 30px;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  body header .header-container .header-main-container nav ul li.companyli div.company a {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+    white-space: nowrap;
+    line-height: 3rem;
+  }
+  body header .header-container .header-main-container nav ul li.employli {
+    position: relative;
+  }
+  body header .header-container .header-main-container nav ul li.employli div.employ {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    height: 0px;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    background-color: #faa61a;
+    padding: 0px 30px;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  body header .header-container .header-main-container nav ul li.employli div.employ a {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+    white-space: nowrap;
+    line-height: 3rem;
   }
   body header .header-container .header-main-container .open-sitemap {
     width: 22px;
@@ -715,113 +825,34 @@ footer > div.up-tool:hover > div.xi-arrow-up {
   body header .header-container .header-main-container .open-sitemap img {
     width: 100%;
   }
-  body header .header-container .header-main-container nav {
-    display: none;
-    /*margin-left: auto;
-      ul {
-        display: flex;
-      li {
-        padding: 0 40px;
-        font-size: 20px;
-        font-weight: bold;
-
-        a {
-          color: #fff;
-          transition: 0.5;
-        }
-        &.companyli:hover > a {
-          color: #faa61a;
-        }
-        &.companyli:hover .company {
-          height: 230px;
-          padding: 18px 30px;
-        }
-        &.serviceli:hover > a {
-          color: #faa61a;
-        }
-        &.employli:hover > a {
-          color: #faa61a;
-        }
-        &.employli:hover .employ {
-          height: 130px;
-          padding: 18px 30px;
-        }
-        &.companyli {
-          position: relative;
-          div.company {
-            position: absolute;
-            top: 40px;
-            left: 40px;
-            height: 0px;
-            border-radius: 30px;
-            border-top-left-radius: 0;
-            background-color: #faa61a;
-            padding: 0px 30px;
-            flex-direction: column;
-            overflow: hidden;
-            transition: 0.5s;
-            a {
-              color: #fff;
-              font-weight: 400;
-              font-size: 1rem;
-              white-space: nowrap;
-              line-height: 3rem;
-            }
-          }
-        }
-        &.employli {
-          position: relative;
-          div.employ {
-            position: absolute;
-            top: 40px;
-            left: 40px;
-            height: 0px;
-            border-radius: 30px;
-            border-top-left-radius: 0;
-            background-color: #faa61a;
-            padding: 0px 30px;
-            flex-direction: column;
-            overflow: hidden;
-            transition: 0.5s;
-            a {
-              color: #fff;
-              font-weight: 400;
-              font-size: 1rem;
-              white-space: nowrap;
-              line-height: 3rem;
-            }
-          }
-        }
-      }
-    }*/
-  }
   body header .header-container .header-main-container .hammenu {
     transition: 0.5s;
-    width: 100%;
+    width: 70%;
     height: 100vh;
     background-color: #000;
     top: 0%;
-    right: -100%;
+    right: -70%;
     position: fixed;
   }
   body header .header-container .header-main-container .hammenu .hambox {
-    padding: 0 100px;
-    width: auto;
+    opacity: 0;
+    padding: 40px 100px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
   }
   body header .header-container .header-main-container .hammenu .hambox .haminnerbox {
+    width: 100%;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
   body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger {
-    cursor: pointer;
     width: 35px;
     height: 25px;
     position: relative;
+    cursor: pointer;
   }
   body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger span {
     position: absolute;
@@ -852,19 +883,15 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     color: white;
   }
   body header .header-container .header-main-container .burgeron {
+    transition: 0.5s 0.5s;
+    transform: translateX(-100%);
+  }
+  body header .header-container .header-main-container .burgeron .hambox {
     transition: 0.5s;
-    right: 0%;
-  }
-  body header .header-container .header-main-container .burgeron .hambox .burger-submenu {
-    width: 100%;
-    height: 150px;
-  }
-  body header .header-container .header-main-container .burgeron .hambox .burger-submenu .burger-submenus {
-    padding: 30px 0;
-  }
-  body header .header-container .header-main-container .burgeron .hambox .burger-submenu .burger-submenus a {
-    font-size: 2rem;
-    color: white;
+    opacity: 1;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
   body footer {
     width: 100%;
@@ -994,92 +1021,88 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     height: 53px;
     opacity: 0;
   }
-  body header .header-container .header-main-container h1 .black {
-    opacity: 1;
-  }
   body header .header-container .header-main-container nav {
     display: none;
-    /*margin-left: auto;
-    ul {
-      display: flex;
-      li {
-        padding: 0 40px;
-        font-size: 20px;
-        font-weight: bold;
-
-        a {
-          color: #fff;
-          transition: 0.5;
-        }
-        &.companyli:hover > a {
-          color: #faa61a;
-        }
-        &.companyli:hover .company {
-          height: 230px;
-          padding: 18px 30px;
-        }
-        &.serviceli:hover > a {
-          color: #faa61a;
-        }
-        &.employli:hover > a {
-          color: #faa61a;
-        }
-        &.employli:hover .employ {
-          height: 130px;
-          padding: 18px 30px;
-        }
-        &.companyli {
-          position: relative;
-          div.company {
-            position: absolute;
-            top: 40px;
-            left: 40px;
-            height: 0px;
-            border-radius: 30px;
-            border-top-left-radius: 0;
-            background-color: #faa61a;
-            padding: 0px 30px;
-            flex-direction: column;
-            overflow: hidden;
-            transition: 0.5s;
-            a {
-              color: #fff;
-              font-weight: 400;
-              font-size: 1rem;
-              white-space: nowrap;
-              line-height: 3rem;
-            }
-          }
-        }
-        &.employli {
-          position: relative;
-          div.employ {
-            position: absolute;
-            top: 40px;
-            left: 40px;
-            height: 0px;
-            border-radius: 30px;
-            border-top-left-radius: 0;
-            background-color: #faa61a;
-            padding: 0px 30px;
-            flex-direction: column;
-            overflow: hidden;
-            transition: 0.5s;
-            a {
-              color: #fff;
-              font-weight: 400;
-              font-size: 1rem;
-              white-space: nowrap;
-              line-height: 3rem;
-            }
-          }
-        }
-      }
-    }*/
+    margin-left: auto;
+  }
+  body header .header-container .header-main-container nav ul {
+    display: flex;
+  }
+  body header .header-container .header-main-container nav ul li {
+    padding: 0 40px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  body header .header-container .header-main-container nav ul li a {
+    color: #fff;
+    transition: 0.5;
+  }
+  body header .header-container .header-main-container nav ul li.companyli:hover > a, body header .header-container .header-main-container nav ul li.companyli.active > a {
+    color: #faa61a;
+  }
+  body header .header-container .header-main-container nav ul li.companyli:hover .company {
+    height: 230px;
+    padding: 18px 30px;
+  }
+  body header .header-container .header-main-container nav ul li.serviceli:hover > a, body header .header-container .header-main-container nav ul li.serviceli.active > a {
+    color: #faa61a;
+  }
+  body header .header-container .header-main-container nav ul li.employli:hover > a, body header .header-container .header-main-container nav ul li.employli.active > a {
+    color: #faa61a;
+  }
+  body header .header-container .header-main-container nav ul li.employli:hover .employ {
+    height: 130px;
+    padding: 18px 30px;
+  }
+  body header .header-container .header-main-container nav ul li.companyli {
+    position: relative;
+  }
+  body header .header-container .header-main-container nav ul li.companyli div.company {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    height: 0px;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    background-color: #faa61a;
+    padding: 0px 30px;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  body header .header-container .header-main-container nav ul li.companyli div.company a {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+    white-space: nowrap;
+    line-height: 3rem;
+  }
+  body header .header-container .header-main-container nav ul li.employli {
+    position: relative;
+  }
+  body header .header-container .header-main-container nav ul li.employli div.employ {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    height: 0px;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    background-color: #faa61a;
+    padding: 0px 30px;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  body header .header-container .header-main-container nav ul li.employli div.employ a {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+    white-space: nowrap;
+    line-height: 3rem;
   }
   body header .header-container .header-main-container .open-sitemap {
     width: 22px;
-    margin-left: 50px;
+    margin-left: 0;
     padding: 0;
     background-color: transparent;
     border: none;
@@ -1097,23 +1120,24 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     position: fixed;
   }
   body header .header-container .header-main-container .hammenu .hambox {
-    padding: 0 70px;
-    width: auto;
+    opacity: 0;
+    padding: 40px 70px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
   }
   body header .header-container .header-main-container .hammenu .hambox .haminnerbox {
+    width: 100%;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
   body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger {
-    cursor: pointer;
     width: 35px;
     height: 25px;
     position: relative;
+    cursor: pointer;
   }
   body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger span {
     position: absolute;
@@ -1144,23 +1168,20 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     color: white;
   }
   body header .header-container .header-main-container .burgeron {
+    transition: 0.5s 0.5s;
+    transform: translateX(-100%);
+  }
+  body header .header-container .header-main-container .burgeron .hambox {
     transition: 0.5s;
-    right: 0%;
-  }
-  body header .header-container .header-main-container .burgeron .hambox .burger-submenu {
-    width: 100%;
-    height: 150px;
-  }
-  body header .header-container .header-main-container .burgeron .hambox .burger-submenu .burger-submenus {
-    padding: 30px 0;
-  }
-  body header .header-container .header-main-container .burgeron .hambox .burger-submenu .burger-submenus a {
-    font-size: 2rem;
-    color: white;
+    opacity: 1;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
   body footer {
+    display: none;
     width: 100%;
-    padding: 0;
+    padding: 47.5px 0 75px;
     background-color: #272727;
     color: #222222;
     position: relative;
@@ -1175,11 +1196,9 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     font-size: 13px;
   }
   body footer > div.footer-container > div.left-container > div:first-child {
-    display: none;
     width: 175px;
   }
   body footer > div.footer-container > div.left-container > ul {
-    display: none;
     position: absolute;
     top: 0;
     right: 0;
@@ -1192,7 +1211,6 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     font-weight: inherit;
   }
   body footer > div.footer-container > div.left-container > div.adr {
-    display: none;
     padding-top: 50px;
   }
   body footer > div.footer-container > div.left-container > div.adr > span {
@@ -1211,7 +1229,6 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     color: #fff;
   }
   body footer > div.footer-container > div.left-container > div.tel {
-    display: none;
     padding-top: 20px;
   }
   body footer > div.footer-container > div.left-container > div.tel > span {
@@ -1221,11 +1238,7 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     padding-top: 5px;
   }
   body footer > div.footer-container > div.left-container > div.copy {
-    text-align: center;
-    padding: 30px;
-  }
-  body footer > div.footer-container > div.right-container {
-    display: none;
+    padding-top: 25px;
   }
   body footer > div.footer-container > div.right-container > div.right-top-container {
     display: none;
@@ -1249,25 +1262,5 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     height: 6px;
     border-left: 1px solid #fff;
     border-top: 1px solid #fff;
-  }
-  body footer > div.up-tool {
-    position: absolute;
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    background-color: #fff;
-    top: 100%;
-    right: 1.3%;
-  }
-  body footer > div.up-tool.on {
-    position: fixed;
-    top: 92%;
-    transition: 1s;
-  }
-  body footer > div.up-tool > div.xi-arrow-up {
-    position: absolute;
-    top: 35%;
-    left: 33%;
-    transition: 0.4s;
   }
 }/*# sourceMappingURL=common.css.map */

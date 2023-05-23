@@ -62,7 +62,6 @@ header {
 header .header-container {
   width: 100%;
   padding-top: 40px;
-  position: relative;
 }
 header .header-container .header-main-container {
   padding: 0 30px;
@@ -183,6 +182,7 @@ header .header-container .header-main-container .open-sitemap {
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 header .header-container .header-main-container .open-sitemap img {
   width: 100%;
@@ -195,9 +195,9 @@ header .header-container .header-main-container .hammenu {
   top: 0%;
   right: -30%;
   position: fixed;
-  opacity: 0;
 }
 header .header-container .header-main-container .hammenu .hambox {
+  opacity: 0;
   padding: 40px 130px;
   margin: 0 auto;
   display: flex;
@@ -211,10 +211,10 @@ header .header-container .header-main-container .hammenu .hambox .haminnerbox {
   justify-content: flex-end;
 }
 header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger {
-  cursor: pointer;
   width: 35px;
   height: 25px;
   position: relative;
+  cursor: pointer;
 }
 header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger span {
   position: absolute;
@@ -245,9 +245,45 @@ header .header-container .header-main-container .hammenu .hambox .burger-submenu
   color: white;
 }
 header .header-container .header-main-container .burgeron {
+  transition: 0.5s 0.5s;
+  transform: translateX(-100%);
+}
+header .header-container .header-main-container .burgeron .hambox {
   transition: 0.5s;
-  right: 0;
   opacity: 1;
+  padding: 40px 130px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+header .header-container .header-main-container .burgeron .hambox .haminnerbox {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .header-container .header-main-container .burgeron .hambox .haminnerbox .burger {
+  width: 35px;
+  height: 25px;
+  position: relative;
+}
+header .header-container .header-main-container .burgeron .hambox .haminnerbox .burger span {
+  position: absolute;
+  width: 100%;
+  border: 1px solid #000;
+  height: 4px;
+  background-color: rgb(124, 124, 125);
+  border-radius: 4px;
+}
+header .header-container .header-main-container .burgeron .hambox .haminnerbox .burger span:nth-child(1) {
+  top: 2px;
+}
+header .header-container .header-main-container .burgeron .hambox .haminnerbox .burger span:nth-child(2) {
+  top: 10px;
+}
+header .header-container .header-main-container .burgeron .hambox .haminnerbox .burger span:nth-child(3) {
+  bottom: 2px;
 }
 header .header-container .header-main-container .burgeron .hambox .burger-submenu {
   width: 100%;
@@ -404,6 +440,9 @@ footer > div.footer-container > div.right-container > div.right-bottom-container
 footer > div.footer-container > div.right-container > div.right-bottom-container > div.right-bottom-site:hover > div.arrow-box > div.gotosite {
   display: block;
 }
+footer > div.footer-container > div.right-container > div.right-bottom-container > div.right-bottom-site:hover > div.arrow-box > div.arrow {
+  transform: rotate(45deg);
+}
 footer > div.up-tool {
   position: absolute;
   width: 46px;
@@ -481,7 +520,17 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     height: 53px;
     opacity: 0;
   }
-  body header .header-container .header-main-container nav {
+  body header .header-container .header-main-container button.open-sitemap {
+    width: 22px;
+    margin-left: 150px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+  body header .header-container .header-main-container button.open-sitemap img {
+    width: 100%;
+  }
+  body header .header-container nav {
     display: none;
     /*margin-left: auto;
     ul {
@@ -560,88 +609,6 @@ footer > div.up-tool:hover > div.xi-arrow-up {
         }
       }
     }*/
-  }
-  body header .header-container .header-main-container .open-sitemap {
-    width: 22px;
-    margin-left: 150px;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-  }
-  body header .header-container .header-main-container .open-sitemap img {
-    width: 100%;
-  }
-  body header .header-container .header-main-container .hammenu {
-    transition: 0.5s;
-    width: 40%;
-    height: 100vh;
-    background-color: #000;
-    top: 0%;
-    right: -40%;
-    position: fixed;
-  }
-  body header .header-container .header-main-container .hammenu .hambox {
-    padding: 0;
-    width: 280px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .haminnerbox {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger {
-    cursor: pointer;
-    width: 35px;
-    height: 25px;
-    position: relative;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger span {
-    position: absolute;
-    width: 100%;
-    border: 1px solid #000;
-    height: 4px;
-    background-color: rgb(124, 124, 125);
-    border-radius: 4px;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger span:nth-child(1) {
-    top: 2px;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger span:nth-child(2) {
-    top: 10px;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger span:nth-child(3) {
-    bottom: 2px;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .burger-submenu {
-    width: 100%;
-    height: 150px;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .burger-submenu .burger-submenus {
-    padding: 30px 0;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .burger-submenu .burger-submenus a {
-    font-size: 2rem;
-    color: white;
-  }
-  body header .header-container .header-main-container .burgeron {
-    transition: 0.5s;
-    right: 0%;
-    opacity: 1;
-  }
-  body header .header-container .header-main-container .burgeron .hambox .burger-submenu {
-    width: 100%;
-    height: 150px;
-  }
-  body header .header-container .header-main-container .burgeron .hambox .burger-submenu .burger-submenus {
-    padding: 30px 0;
-  }
-  body header .header-container .header-main-container .burgeron .hambox .burger-submenu .burger-submenus a {
-    font-size: 2rem;
-    color: white;
   }
   body footer {
     width: 100%;
@@ -701,7 +668,17 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     height: 53px;
     opacity: 0;
   }
-  body header .header-container .header-main-container nav {
+  body header .header-container .header-main-container button.open-sitemap {
+    width: 22px;
+    margin-left: 150px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+  body header .header-container .header-main-container button.open-sitemap img {
+    width: 100%;
+  }
+  body header .header-container nav {
     display: none;
     /*margin-left: auto;
     ul {
@@ -780,87 +757,6 @@ footer > div.up-tool:hover > div.xi-arrow-up {
         }
       }
     }*/
-  }
-  body header .header-container .header-main-container .open-sitemap {
-    width: 22px;
-    margin-left: 150px;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-  }
-  body header .header-container .header-main-container .open-sitemap img {
-    width: 100%;
-  }
-  body header .header-container .header-main-container .hammenu {
-    transition: 0.5s;
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-    top: 0%;
-    right: -100%;
-    position: fixed;
-  }
-  body header .header-container .header-main-container .hammenu .hambox {
-    padding: 0 100px;
-    width: auto;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .haminnerbox {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger {
-    cursor: pointer;
-    width: 35px;
-    height: 25px;
-    position: relative;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger span {
-    position: absolute;
-    width: 100%;
-    border: 1px solid #000;
-    height: 4px;
-    background-color: rgb(124, 124, 125);
-    border-radius: 4px;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger span:nth-child(1) {
-    top: 2px;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger span:nth-child(2) {
-    top: 10px;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger span:nth-child(3) {
-    bottom: 2px;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .burger-submenu {
-    width: 100%;
-    height: 150px;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .burger-submenu .burger-submenus {
-    padding: 30px 0;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .burger-submenu .burger-submenus a {
-    font-size: 2rem;
-    color: white;
-  }
-  body header .header-container .header-main-container .burgeron {
-    transition: 0.5s;
-    right: 0%;
-  }
-  body header .header-container .header-main-container .burgeron .hambox .burger-submenu {
-    width: 100%;
-    height: 150px;
-  }
-  body header .header-container .header-main-container .burgeron .hambox .burger-submenu .burger-submenus {
-    padding: 30px 0;
-  }
-  body header .header-container .header-main-container .burgeron .hambox .burger-submenu .burger-submenus a {
-    font-size: 2rem;
-    color: white;
   }
   body footer {
     width: 100%;
@@ -947,326 +843,6 @@ footer > div.up-tool:hover > div.xi-arrow-up {
     border-top: 1px solid #fff;
   }
 }
-@media (min-width: 360px) and (max-width: 540px) {
-  body header {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 5%;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    background-color: #fff;
-    border-bottom: 1px solid #272727;
-    z-index: 999;
-  }
-  body header .header-container {
-    width: 100%;
-    padding-top: 0px;
-  }
-  body header .header-container .header-main-container {
-    padding: 0;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1720px;
-    margin: 0 auto;
-  }
-  body header .header-container .header-main-container h1 {
-    position: relative;
-  }
-  body header .header-container .header-main-container h1 a.frontsvg {
-    width: 180px;
-    height: 37px;
-  }
-  body header .header-container .header-main-container h1 a.frontsvg img {
-    width: 100%;
-  }
-  body header .header-container .header-main-container h1 .white {
-    position: absolute;
-    left: 0%;
-    width: 255px;
-    height: 53px;
-    opacity: 0;
-  }
-  body header .header-container .header-main-container h1 .black {
-    opacity: 1;
-  }
-  body header .header-container .header-main-container nav {
-    display: none;
-    /*margin-left: auto;
-    ul {
-      display: flex;
-      li {
-        padding: 0 40px;
-        font-size: 20px;
-        font-weight: bold;
-
-        a {
-          color: #fff;
-          transition: 0.5;
-        }
-        &.companyli:hover > a {
-          color: #faa61a;
-        }
-        &.companyli:hover .company {
-          height: 230px;
-          padding: 18px 30px;
-        }
-        &.serviceli:hover > a {
-          color: #faa61a;
-        }
-        &.employli:hover > a {
-          color: #faa61a;
-        }
-        &.employli:hover .employ {
-          height: 130px;
-          padding: 18px 30px;
-        }
-        &.companyli {
-          position: relative;
-          div.company {
-            position: absolute;
-            top: 40px;
-            left: 40px;
-            height: 0px;
-            border-radius: 30px;
-            border-top-left-radius: 0;
-            background-color: #faa61a;
-            padding: 0px 30px;
-            flex-direction: column;
-            overflow: hidden;
-            transition: 0.5s;
-            a {
-              color: #fff;
-              font-weight: 400;
-              font-size: 1rem;
-              white-space: nowrap;
-              line-height: 3rem;
-            }
-          }
-        }
-        &.employli {
-          position: relative;
-          div.employ {
-            position: absolute;
-            top: 40px;
-            left: 40px;
-            height: 0px;
-            border-radius: 30px;
-            border-top-left-radius: 0;
-            background-color: #faa61a;
-            padding: 0px 30px;
-            flex-direction: column;
-            overflow: hidden;
-            transition: 0.5s;
-            a {
-              color: #fff;
-              font-weight: 400;
-              font-size: 1rem;
-              white-space: nowrap;
-              line-height: 3rem;
-            }
-          }
-        }
-      }
-    }*/
-  }
-  body header .header-container .header-main-container .open-sitemap {
-    width: 22px;
-    margin-left: 50px;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-  }
-  body header .header-container .header-main-container .open-sitemap img {
-    width: 100%;
-  }
-  body header .header-container .header-main-container .hammenu {
-    transition: 0.5s;
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-    top: 0%;
-    right: -100%;
-    position: fixed;
-  }
-  body header .header-container .header-main-container .hammenu .hambox {
-    padding: 0 70px;
-    width: auto;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .haminnerbox {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger {
-    cursor: pointer;
-    width: 35px;
-    height: 25px;
-    position: relative;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger span {
-    position: absolute;
-    width: 100%;
-    border: 1px solid #000;
-    height: 4px;
-    background-color: rgb(124, 124, 125);
-    border-radius: 4px;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger span:nth-child(1) {
-    top: 2px;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger span:nth-child(2) {
-    top: 10px;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .haminnerbox .burger span:nth-child(3) {
-    bottom: 2px;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .burger-submenu {
-    width: 100%;
-    height: 150px;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .burger-submenu .burger-submenus {
-    padding: 30px 0;
-  }
-  body header .header-container .header-main-container .hammenu .hambox .burger-submenu .burger-submenus a {
-    font-size: 2rem;
-    color: white;
-  }
-  body header .header-container .header-main-container .burgeron {
-    transition: 0.5s;
-    right: 0%;
-  }
-  body header .header-container .header-main-container .burgeron .hambox .burger-submenu {
-    width: 100%;
-    height: 150px;
-  }
-  body header .header-container .header-main-container .burgeron .hambox .burger-submenu .burger-submenus {
-    padding: 30px 0;
-  }
-  body header .header-container .header-main-container .burgeron .hambox .burger-submenu .burger-submenus a {
-    font-size: 2rem;
-    color: white;
-  }
-  body footer {
-    width: 100%;
-    padding: 0;
-    background-color: #272727;
-    color: #222222;
-    position: relative;
-  }
-  body footer > div.footer-container {
-    padding: 0 5%;
-    flex-direction: column;
-  }
-  body footer > div.footer-container > div.left-container {
-    width: 100%;
-    position: relative;
-    font-size: 13px;
-  }
-  body footer > div.footer-container > div.left-container > div:first-child {
-    display: none;
-    width: 175px;
-  }
-  body footer > div.footer-container > div.left-container > ul {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    text-align: bottom right;
-  }
-  body footer > div.footer-container > div.left-container > ul > li {
-    padding-right: 0;
-    padding-top: 20px;
-    padding-left: 25px;
-    font-weight: inherit;
-  }
-  body footer > div.footer-container > div.left-container > div.adr {
-    display: none;
-    padding-top: 50px;
-  }
-  body footer > div.footer-container > div.left-container > div.adr > span {
-    display: inline-block;
-    color: #7c7c7c;
-    padding-top: 5px;
-    padding-right: 15px;
-  }
-  body footer > div.footer-container > div.left-container > div.adr > span:first-child {
-    display: block;
-    width: 100%;
-    padding-top: 0px;
-  }
-  body footer > div.footer-container > div.left-container > div.adr > span > em {
-    font-style: normal;
-    color: #fff;
-  }
-  body footer > div.footer-container > div.left-container > div.tel {
-    display: none;
-    padding-top: 20px;
-  }
-  body footer > div.footer-container > div.left-container > div.tel > span {
-    display: block;
-  }
-  body footer > div.footer-container > div.left-container > div.tel > span:last-child {
-    padding-top: 5px;
-  }
-  body footer > div.footer-container > div.left-container > div.copy {
-    text-align: center;
-    padding: 30px;
-  }
-  body footer > div.footer-container > div.right-container {
-    display: none;
-  }
-  body footer > div.footer-container > div.right-container > div.right-top-container {
-    display: none;
-  }
-  body footer > div.footer-container > div.right-container > div.right-bottom-container {
-    padding-top: 30px;
-    justify-content: flex-start;
-  }
-  body footer > div.footer-container > div.right-container > div.right-bottom-container > a.right-bottom-icon {
-    padding-right: 15px;
-  }
-  body footer > div.footer-container > div.right-container > div.right-bottom-container > div.right-bottom-site {
-    font-size: 13px;
-    padding: 15px 25px 15px 25px;
-  }
-  body footer > div.footer-container > div.right-container > div.right-bottom-container > div.right-bottom-site > div.arrow-box > div.arrow-text {
-    padding-right: 10px;
-  }
-  body footer > div.footer-container > div.right-container > div.right-bottom-container > div.right-bottom-site > div.arrow-box > div.arrow {
-    width: 6px;
-    height: 6px;
-    border-left: 1px solid #fff;
-    border-top: 1px solid #fff;
-  }
-  body footer > div.up-tool {
-    position: absolute;
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    background-color: #fff;
-    top: 100%;
-    right: 1.3%;
-  }
-  body footer > div.up-tool.on {
-    position: fixed;
-    top: 92%;
-    transition: 1s;
-  }
-  body footer > div.up-tool > div.xi-arrow-up {
-    position: absolute;
-    top: 35%;
-    left: 33%;
-    transition: 0.4s;
-  }
-}
 body {
   margin: 0;
   padding: 0;
@@ -1287,7 +863,11 @@ main .intro-container .intro-content .abox div {
 main .intro-container .intro-content .abox .first {
   font-size: 14px;
 }
-main .intro-container .intro-content .abox .first:before {
+main .intro-container .intro-content .abox .first a {
+  display: inline-block;
+}
+main .intro-container .intro-content .abox .first a:before {
+  font-size: 16px;
   font-family: "xeicon";
   content: "\e900";
 }
@@ -1315,6 +895,9 @@ main .intro-container .intro-content .abox .second:after {
   margin: 0px 7px 0 5px;
   color: #222;
   font-size: 18px;
+}
+main .intro-container .intro-content .abox .third {
+  font-size: 14px;
 }
 main .intro-container .intro-content h3 {
   padding-top: 57px;
@@ -1658,13 +1241,16 @@ main .fifth-intro-container > div > div ul li p {
   color: #555;
   padding-top: 1.47rem;
 }
-main .fifth-intro-container > div > div ul .fintro-first div {
+main .fifth-intro-container > div > div ul .fintro-first {
   position: relative;
+}
+main .fifth-intro-container > div > div ul .fintro-first div {
   border-top-right-radius: 0%;
+  position: relative;
 }
 main .fifth-intro-container > div > div ul .fintro-first div:before {
   position: absolute;
-  font-size: 3.038vw;
+  font-size: 48px;
   top: 50%;
   transform: translate(-50%, -50%);
   font-family: "xeicon";
@@ -1679,13 +1265,16 @@ main .fifth-intro-container > div > div ul .fintro-first.orange div {
 main .fifth-intro-container > div > div ul .fintro-first.orange span {
   color: #faa61a;
 }
-main .fifth-intro-container > div > div ul .fintro-second div {
+main .fifth-intro-container > div > div ul .fintro-second {
   position: relative;
+}
+main .fifth-intro-container > div > div ul .fintro-second div {
   border-bottom-right-radius: 0%;
+  position: relative;
 }
 main .fifth-intro-container > div > div ul .fintro-second div:before {
   position: absolute;
-  font-size: 3.038vw;
+  font-size: 48px;
   top: 50%;
   transform: translate(-50%, -50%);
   font-family: "xeicon";
@@ -1700,13 +1289,16 @@ main .fifth-intro-container > div > div ul .fintro-second.orange div {
 main .fifth-intro-container > div > div ul .fintro-second.orange span {
   color: #faa61a;
 }
-main .fifth-intro-container > div > div ul .fintro-third div {
+main .fifth-intro-container > div > div ul .fintro-third {
   position: relative;
+}
+main .fifth-intro-container > div > div ul .fintro-third div {
   border-top-right-radius: 0%;
+  position: relative;
 }
 main .fifth-intro-container > div > div ul .fintro-third div:before {
   position: absolute;
-  font-size: 3.038vw;
+  font-size: 48px;
   top: 50%;
   transform: translate(-50%, -50%);
   font-family: "xeicon";
@@ -1721,13 +1313,16 @@ main .fifth-intro-container > div > div ul .fintro-third.orange div {
 main .fifth-intro-container > div > div ul .fintro-third.orange span {
   color: #faa61a;
 }
-main .fifth-intro-container > div > div ul .fintro-fourth div {
+main .fifth-intro-container > div > div ul .fintro-fourth {
   position: relative;
+}
+main .fifth-intro-container > div > div ul .fintro-fourth div {
   border-bottom-right-radius: 0%;
+  position: relative;
 }
 main .fifth-intro-container > div > div ul .fintro-fourth div:before {
   position: absolute;
-  font-size: 3.038vw;
+  font-size: 48px;
   top: 50%;
   transform: translate(-50%, -50%);
   font-family: "xeicon";
@@ -1742,13 +1337,16 @@ main .fifth-intro-container > div > div ul .fintro-fourth.orange div {
 main .fifth-intro-container > div > div ul .fintro-fourth.orange span {
   color: #faa61a;
 }
-main .fifth-intro-container > div > div ul .fintro-fifth div {
+main .fifth-intro-container > div > div ul .fintro-fifth {
   position: relative;
+}
+main .fifth-intro-container > div > div ul .fintro-fifth div {
   border-top-right-radius: 0%;
+  position: relative;
 }
 main .fifth-intro-container > div > div ul .fintro-fifth div:before {
   position: absolute;
-  font-size: 3.038vw;
+  font-size: 48px;
   top: 50%;
   transform: translate(-50%, -50%);
   font-family: "xeicon";
@@ -1784,7 +1382,11 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   main .intro-container .intro-content .abox .first {
     font-size: 14px;
   }
-  main .intro-container .intro-content .abox .first:before {
+  main .intro-container .intro-content .abox .first a {
+    display: inline-block;
+  }
+  main .intro-container .intro-content .abox .first a:before {
+    font-size: 16px;
     font-family: "xeicon";
     content: "\e900";
   }
@@ -2161,9 +1763,12 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
     color: #555;
     padding-top: 1.47rem;
   }
-  main .fifth-intro-container > div > div ul .fintro-first div {
+  main .fifth-intro-container > div > div ul .fintro-first {
     position: relative;
+  }
+  main .fifth-intro-container > div > div ul .fintro-first div {
     border-top-right-radius: 0%;
+    position: relative;
   }
   main .fifth-intro-container > div > div ul .fintro-first div:before {
     position: absolute;
@@ -2182,9 +1787,12 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   main .fifth-intro-container > div > div ul .fintro-first.orange span {
     color: #faa61a;
   }
-  main .fifth-intro-container > div > div ul .fintro-second div {
+  main .fifth-intro-container > div > div ul .fintro-second {
     position: relative;
+  }
+  main .fifth-intro-container > div > div ul .fintro-second div {
     border-bottom-right-radius: 0%;
+    position: relative;
   }
   main .fifth-intro-container > div > div ul .fintro-second div:before {
     position: absolute;
@@ -2203,9 +1811,12 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   main .fifth-intro-container > div > div ul .fintro-second.orange span {
     color: #faa61a;
   }
-  main .fifth-intro-container > div > div ul .fintro-third div {
+  main .fifth-intro-container > div > div ul .fintro-third {
     position: relative;
+  }
+  main .fifth-intro-container > div > div ul .fintro-third div {
     border-top-right-radius: 0%;
+    position: relative;
   }
   main .fifth-intro-container > div > div ul .fintro-third div:before {
     position: absolute;
@@ -2224,9 +1835,12 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   main .fifth-intro-container > div > div ul .fintro-third.orange span {
     color: #faa61a;
   }
-  main .fifth-intro-container > div > div ul .fintro-fourth div {
+  main .fifth-intro-container > div > div ul .fintro-fourth {
     position: relative;
+  }
+  main .fifth-intro-container > div > div ul .fintro-fourth div {
     border-bottom-right-radius: 0%;
+    position: relative;
   }
   main .fifth-intro-container > div > div ul .fintro-fourth div:before {
     position: absolute;
@@ -2245,9 +1859,12 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   main .fifth-intro-container > div > div ul .fintro-fourth.orange span {
     color: #faa61a;
   }
-  main .fifth-intro-container > div > div ul .fintro-fifth div {
+  main .fifth-intro-container > div > div ul .fintro-fifth {
     position: relative;
+  }
+  main .fifth-intro-container > div > div ul .fintro-fifth div {
     border-top-right-radius: 0%;
+    position: relative;
   }
   main .fifth-intro-container > div > div ul .fintro-fifth div:before {
     position: absolute;
@@ -2287,7 +1904,11 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   main .intro-container .intro-content .abox .first {
     font-size: 11px;
   }
-  main .intro-container .intro-content .abox .first:before {
+  main .intro-container .intro-content .abox .first a {
+    display: inline-block;
+  }
+  main .intro-container .intro-content .abox .first a:before {
+    font-size: 16px;
     font-family: "xeicon";
     content: "\e900";
   }
@@ -2389,10 +2010,12 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   main .first-intro-container .first-top-intro-content h4 {
     font-size: 30px;
     padding-bottom: 14px;
+    word-break: keep-all;
   }
   main .first-intro-container .first-top-intro-content span {
     font-size: 16px;
     color: #222;
+    word-break: keep-all;
   }
   main .first-intro-container .first-top-intro-content span em {
     font-weight: 600;
@@ -2406,7 +2029,7 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   }
   main .first-intro-container .first-bot-intro-content > div {
     text-align: center;
-    border-bottom-right-radius: 100px;
+    border-bottom-right-radius: 70px;
     overflow: hidden;
   }
   main .first-intro-container .first-bot-intro-content > div img {
@@ -2428,9 +2051,11 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   main .first-intro-container .first-bot-intro-content .fbic-toptxt {
     padding-top: 55px;
     font-size: 1.2rem;
+    word-break: keep-all;
   }
   main .first-intro-container .first-bot-intro-content .fbic-bottxt {
     font-size: 1.2rem;
+    word-break: keep-all;
   }
   main .first-intro-container:after {
     content: "";
@@ -2690,13 +2315,16 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
     padding-top: 0.77rem;
     padding-bottom: 20px;
   }
-  main .fifth-intro-container > div > div ul .fintro-first div {
+  main .fifth-intro-container > div > div ul .fintro-first {
     position: relative;
+  }
+  main .fifth-intro-container > div > div ul .fintro-first div {
     border-top-right-radius: 0%;
+    position: relative;
   }
   main .fifth-intro-container > div > div ul .fintro-first div:before {
     position: absolute;
-    font-size: 3.038vw;
+    font-size: 36px;
     top: 50%;
     transform: translate(-50%, -50%);
     font-family: "xeicon";
@@ -2711,13 +2339,16 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   main .fifth-intro-container > div > div ul .fintro-first.orange span {
     color: #faa61a;
   }
-  main .fifth-intro-container > div > div ul .fintro-second div {
+  main .fifth-intro-container > div > div ul .fintro-second {
     position: relative;
+  }
+  main .fifth-intro-container > div > div ul .fintro-second div {
     border-bottom-right-radius: 0%;
+    position: relative;
   }
   main .fifth-intro-container > div > div ul .fintro-second div:before {
     position: absolute;
-    font-size: 3.038vw;
+    font-size: 36px;
     top: 50%;
     transform: translate(-50%, -50%);
     font-family: "xeicon";
@@ -2732,13 +2363,16 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   main .fifth-intro-container > div > div ul .fintro-second.orange span {
     color: #faa61a;
   }
-  main .fifth-intro-container > div > div ul .fintro-third div {
+  main .fifth-intro-container > div > div ul .fintro-third {
     position: relative;
+  }
+  main .fifth-intro-container > div > div ul .fintro-third div {
     border-top-right-radius: 0%;
+    position: relative;
   }
   main .fifth-intro-container > div > div ul .fintro-third div:before {
     position: absolute;
-    font-size: 3.038vw;
+    font-size: 36px;
     top: 50%;
     transform: translate(-50%, -50%);
     font-family: "xeicon";
@@ -2753,13 +2387,16 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   main .fifth-intro-container > div > div ul .fintro-third.orange span {
     color: #faa61a;
   }
-  main .fifth-intro-container > div > div ul .fintro-fourth div {
+  main .fifth-intro-container > div > div ul .fintro-fourth {
     position: relative;
+  }
+  main .fifth-intro-container > div > div ul .fintro-fourth div {
     border-bottom-right-radius: 0%;
+    position: relative;
   }
   main .fifth-intro-container > div > div ul .fintro-fourth div:before {
     position: absolute;
-    font-size: 3.038vw;
+    font-size: 36px;
     top: 50%;
     transform: translate(-50%, -50%);
     font-family: "xeicon";
@@ -2774,13 +2411,16 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   main .fifth-intro-container > div > div ul .fintro-fourth.orange span {
     color: #faa61a;
   }
-  main .fifth-intro-container > div > div ul .fintro-fifth div {
+  main .fifth-intro-container > div > div ul .fintro-fifth {
     position: relative;
+  }
+  main .fifth-intro-container > div > div ul .fintro-fifth div {
     border-top-right-radius: 0%;
+    position: relative;
   }
   main .fifth-intro-container > div > div ul .fintro-fifth div:before {
     position: absolute;
-    font-size: 3.038vw;
+    font-size: 36px;
     top: 50%;
     transform: translate(-50%, -50%);
     font-family: "xeicon";
@@ -2816,7 +2456,11 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   main .intro-container .intro-content .abox .first {
     font-size: 11px;
   }
-  main .intro-container .intro-content .abox .first:before {
+  main .intro-container .intro-content .abox .first a {
+    display: inline-block;
+  }
+  main .intro-container .intro-content .abox .first a:before {
+    font-size: 16px;
     font-family: "xeicon";
     content: "\e900";
   }
@@ -2856,9 +2500,11 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
     letter-spacing: -0.02rem;
     color: #222;
   }
+  main .intro-container .intro-content h3 p {
+    word-break: keep-all;
+  }
   main .intro-container .intro-content h3 p span {
     font-weight: 100;
-    word-break: keep-all;
   }
   main .intro-container .intro-content h3 p span em {
     font-weight: 700;
@@ -2879,7 +2525,7 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   }
   main .intro-menu-container .intro-menu-content ul li {
     color: #ccc;
-    padding-right: 25px;
+    padding-right: 22px;
     font-size: 15px;
     font-weight: 700;
   }
@@ -2917,12 +2563,14 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
     text-align: center;
   }
   main .first-intro-container .first-top-intro-content h4 {
-    font-size: 28px;
+    font-size: 30px;
     padding-bottom: 14px;
+    word-break: keep-all;
   }
   main .first-intro-container .first-top-intro-content span {
     font-size: 16px;
     color: #222;
+    word-break: keep-all;
   }
   main .first-intro-container .first-top-intro-content span em {
     font-weight: 600;
@@ -2936,7 +2584,7 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   }
   main .first-intro-container .first-bot-intro-content > div {
     text-align: center;
-    border-bottom-right-radius: 100px;
+    border-bottom-right-radius: 50px;
     overflow: hidden;
   }
   main .first-intro-container .first-bot-intro-content > div img {
@@ -2958,9 +2606,11 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   main .first-intro-container .first-bot-intro-content .fbic-toptxt {
     padding-top: 55px;
     font-size: 1.2rem;
+    word-break: keep-all;
   }
   main .first-intro-container .first-bot-intro-content .fbic-bottxt {
     font-size: 1.2rem;
+    word-break: keep-all;
   }
   main .first-intro-container:after {
     content: "";
@@ -3163,7 +2813,7 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
     top: 50%;
     transform: translate(-50%, -50%);
     color: #f8f8f8;
-    font-size: 80px;
+    font-size: 140px;
     letter-spacing: -0.015rem;
     z-index: -1;
   }
@@ -3190,7 +2840,7 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
           }*/
   }
   main .fifth-intro-container > div > div ul li {
-    width: 22%;
+    width: 115px;
     margin: 0 1.76%;
     padding: 0 10px;
     text-align: center;
@@ -3220,13 +2870,16 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
     padding-top: 0.77rem;
     padding-bottom: 20px;
   }
-  main .fifth-intro-container > div > div ul .fintro-first div {
+  main .fifth-intro-container > div > div ul .fintro-first {
     position: relative;
+  }
+  main .fifth-intro-container > div > div ul .fintro-first div {
     border-top-right-radius: 0%;
+    position: relative;
   }
   main .fifth-intro-container > div > div ul .fintro-first div:before {
     position: absolute;
-    font-size: 3.038vw;
+    font-size: 24px;
     top: 50%;
     transform: translate(-50%, -50%);
     font-family: "xeicon";
@@ -3241,13 +2894,16 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   main .fifth-intro-container > div > div ul .fintro-first.orange span {
     color: #faa61a;
   }
-  main .fifth-intro-container > div > div ul .fintro-second div {
+  main .fifth-intro-container > div > div ul .fintro-second {
     position: relative;
+  }
+  main .fifth-intro-container > div > div ul .fintro-second div {
     border-bottom-right-radius: 0%;
+    position: relative;
   }
   main .fifth-intro-container > div > div ul .fintro-second div:before {
     position: absolute;
-    font-size: 3.038vw;
+    font-size: 24px;
     top: 50%;
     transform: translate(-50%, -50%);
     font-family: "xeicon";
@@ -3262,13 +2918,16 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   main .fifth-intro-container > div > div ul .fintro-second.orange span {
     color: #faa61a;
   }
-  main .fifth-intro-container > div > div ul .fintro-third div {
+  main .fifth-intro-container > div > div ul .fintro-third {
     position: relative;
+  }
+  main .fifth-intro-container > div > div ul .fintro-third div {
     border-top-right-radius: 0%;
+    position: relative;
   }
   main .fifth-intro-container > div > div ul .fintro-third div:before {
     position: absolute;
-    font-size: 3.038vw;
+    font-size: 24px;
     top: 50%;
     transform: translate(-50%, -50%);
     font-family: "xeicon";
@@ -3283,13 +2942,16 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   main .fifth-intro-container > div > div ul .fintro-third.orange span {
     color: #faa61a;
   }
-  main .fifth-intro-container > div > div ul .fintro-fourth div {
+  main .fifth-intro-container > div > div ul .fintro-fourth {
     position: relative;
+  }
+  main .fifth-intro-container > div > div ul .fintro-fourth div {
     border-bottom-right-radius: 0%;
+    position: relative;
   }
   main .fifth-intro-container > div > div ul .fintro-fourth div:before {
     position: absolute;
-    font-size: 3.038vw;
+    font-size: 24px;
     top: 50%;
     transform: translate(-50%, -50%);
     font-family: "xeicon";
@@ -3304,13 +2966,16 @@ main .fifth-intro-container > div > div ul .fintro-fifth.orange span {
   main .fifth-intro-container > div > div ul .fintro-fourth.orange span {
     color: #faa61a;
   }
-  main .fifth-intro-container > div > div ul .fintro-fifth div {
+  main .fifth-intro-container > div > div ul .fintro-fifth {
     position: relative;
+  }
+  main .fifth-intro-container > div > div ul .fintro-fifth div {
     border-top-right-radius: 0%;
+    position: relative;
   }
   main .fifth-intro-container > div > div ul .fintro-fifth div:before {
     position: absolute;
-    font-size: 3.038vw;
+    font-size: 24px;
     top: 50%;
     transform: translate(-50%, -50%);
     font-family: "xeicon";

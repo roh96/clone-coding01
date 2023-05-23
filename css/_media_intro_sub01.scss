@@ -17,10 +17,14 @@
           }
           .first {
             font-size: 14px;
-          }
-          .first:before {
-            font-family: "xeicon";
-            content: "\e900";
+            a {
+              display: inline-block;
+              &:before {
+                font-size: 16px;
+                font-family: "xeicon";
+                content: "\e900";
+              }
+            }
           }
           .first:after {
             font-family: "xeicon";
@@ -403,9 +407,10 @@
                   }
                 }*/
             .fintro-first {
+              position: relative;
               div {
-                position: relative;
                 border-top-right-radius: 0%;
+                position: relative;
                 &:before {
                   position: absolute;
                   font-size: 3.038vw;
@@ -426,9 +431,10 @@
               }
             }
             .fintro-second {
+              position: relative;
               div {
-                position: relative;
                 border-bottom-right-radius: 0%;
+                position: relative;
                 &:before {
                   position: absolute;
                   font-size: 3.038vw;
@@ -449,9 +455,10 @@
               }
             }
             .fintro-third {
+              position: relative;
               div {
-                position: relative;
                 border-top-right-radius: 0%;
+                position: relative;
                 &:before {
                   position: absolute;
                   font-size: 3.038vw;
@@ -472,9 +479,10 @@
               }
             }
             .fintro-fourth {
+              position: relative;
               div {
-                position: relative;
                 border-bottom-right-radius: 0%;
+                position: relative;
                 &:before {
                   position: absolute;
                   font-size: 3.038vw;
@@ -495,9 +503,10 @@
               }
             }
             .fintro-fifth {
+              position: relative;
               div {
-                position: relative;
                 border-top-right-radius: 0%;
+                position: relative;
                 &:before {
                   position: absolute;
                   font-size: 3.038vw;
@@ -523,7 +532,6 @@
     }
   }
 }
-
 @include device($mobile, $tablet) {
   body {
     margin: 0;
@@ -543,11 +551,16 @@
           }
           .first {
             font-size: 11px;
+            a {
+              display: inline-block;
+              &:before {
+                font-size: 16px;
+                font-family: "xeicon";
+                content: "\e900";
+              }
+            }
           }
-          .first:before {
-            font-family: "xeicon";
-            content: "\e900";
-          }
+
           .first:after {
             font-family: "xeicon";
             display: inline-block;
@@ -653,10 +666,12 @@
         h4 {
           font-size: 30px;
           padding-bottom: 14px;
+          word-break: keep-all;
         }
         span {
           font-size: 16px;
           color: #222;
+          word-break: keep-all;
           em {
             font-weight: 600;
             color: #faa61a;
@@ -670,7 +685,7 @@
         margin: 0 auto;
         > div {
           text-align: center;
-          border-bottom-right-radius: 100px;
+          border-bottom-right-radius: 70px;
           overflow: hidden;
           img {
             width: 100%;
@@ -692,9 +707,11 @@
         .fbic-toptxt {
           padding-top: 55px;
           font-size: 1.2rem;
+          word-break: keep-all;
         }
         .fbic-bottxt {
           font-size: 1.2rem;
+          word-break: keep-all;
         }
       }
       &:after {
@@ -954,12 +971,13 @@
                     }
                   }*/
             .fintro-first {
+              position: relative;
               div {
-                position: relative;
                 border-top-right-radius: 0%;
+                position: relative;
                 &:before {
                   position: absolute;
-                  font-size: 3.038vw;
+                  font-size: 36px;
                   top: 50%;
                   transform: translate(-50%, -50%);
                   font-family: "xeicon";
@@ -977,12 +995,13 @@
               }
             }
             .fintro-second {
+              position: relative;
               div {
-                position: relative;
                 border-bottom-right-radius: 0%;
+                position: relative;
                 &:before {
                   position: absolute;
-                  font-size: 3.038vw;
+                  font-size: 36px;
                   top: 50%;
                   transform: translate(-50%, -50%);
                   font-family: "xeicon";
@@ -1000,12 +1019,13 @@
               }
             }
             .fintro-third {
+              position: relative;
               div {
-                position: relative;
                 border-top-right-radius: 0%;
+                position: relative;
                 &:before {
                   position: absolute;
-                  font-size: 3.038vw;
+                  font-size: 36px;
                   top: 50%;
                   transform: translate(-50%, -50%);
                   font-family: "xeicon";
@@ -1023,12 +1043,13 @@
               }
             }
             .fintro-fourth {
+              position: relative;
               div {
-                position: relative;
                 border-bottom-right-radius: 0%;
+                position: relative;
                 &:before {
                   position: absolute;
-                  font-size: 3.038vw;
+                  font-size: 36px;
                   top: 50%;
                   transform: translate(-50%, -50%);
                   font-family: "xeicon";
@@ -1046,12 +1067,13 @@
               }
             }
             .fintro-fifth {
+              position: relative;
               div {
-                position: relative;
                 border-top-right-radius: 0%;
+                position: relative;
                 &:before {
                   position: absolute;
-                  font-size: 3.038vw;
+                  font-size: 36px;
                   top: 50%;
                   transform: translate(-50%, -50%);
                   font-family: "xeicon";
@@ -1074,7 +1096,6 @@
     }
   }
 }
-
 @include device($mobile2, $mobile) {
   body {
     margin: 0;
@@ -1094,10 +1115,14 @@
           }
           .first {
             font-size: 11px;
-          }
-          .first:before {
-            font-family: "xeicon";
-            content: "\e900";
+            a {
+              display: inline-block;
+              &:before {
+                font-size: 16px;
+                font-family: "xeicon";
+                content: "\e900";
+              }
+            }
           }
           .first:after {
             font-family: "xeicon";
@@ -1136,9 +1161,9 @@
           letter-spacing: -0.02rem;
           color: #222;
           p {
+            word-break: keep-all;
             span {
               font-weight: 100;
-              word-break: keep-all;
               em {
                 font-weight: 700;
                 font-style: normal;
@@ -1160,7 +1185,7 @@
           display: flex;
           li {
             color: #ccc;
-            padding-right: 25px;
+            padding-right: 22px;
             font-size: 15px;
             font-weight: 700;
             a {
@@ -1203,12 +1228,14 @@
         margin: 0 auto;
         text-align: center;
         h4 {
-          font-size: 28px;
+          font-size: 30px;
           padding-bottom: 14px;
+          word-break: keep-all;
         }
         span {
           font-size: 16px;
           color: #222;
+          word-break: keep-all;
           em {
             font-weight: 600;
             color: #faa61a;
@@ -1222,7 +1249,7 @@
         margin: 0 auto;
         > div {
           text-align: center;
-          border-bottom-right-radius: 100px;
+          border-bottom-right-radius: 50px;
           overflow: hidden;
           img {
             width: 100%;
@@ -1244,9 +1271,11 @@
         .fbic-toptxt {
           padding-top: 55px;
           font-size: 1.2rem;
+          word-break: keep-all;
         }
         .fbic-bottxt {
           font-size: 1.2rem;
+          word-break: keep-all;
         }
       }
       &:after {
@@ -1448,7 +1477,7 @@
             top: 50%;
             transform: translate(-50%, -50%);
             color: #f8f8f8;
-            font-size: 80px;
+            font-size: 140px;
             letter-spacing: -0.015rem;
             //font-weight: 900;
             z-index: -1;
@@ -1463,7 +1492,7 @@
             flex-wrap: wrap;
             justify-content: center;
             li {
-              width: 22%;
+              width: 115px;
               margin: 0 1.76%;
               padding: 0 10px;
               text-align: center;
@@ -1506,12 +1535,13 @@
                     }
                   }*/
             .fintro-first {
+              position: relative;
               div {
-                position: relative;
                 border-top-right-radius: 0%;
+                position: relative;
                 &:before {
                   position: absolute;
-                  font-size: 3.038vw;
+                  font-size: 24px;
                   top: 50%;
                   transform: translate(-50%, -50%);
                   font-family: "xeicon";
@@ -1529,12 +1559,13 @@
               }
             }
             .fintro-second {
+              position: relative;
               div {
-                position: relative;
                 border-bottom-right-radius: 0%;
+                position: relative;
                 &:before {
                   position: absolute;
-                  font-size: 3.038vw;
+                  font-size: 24px;
                   top: 50%;
                   transform: translate(-50%, -50%);
                   font-family: "xeicon";
@@ -1552,12 +1583,13 @@
               }
             }
             .fintro-third {
+              position: relative;
               div {
-                position: relative;
                 border-top-right-radius: 0%;
+                position: relative;
                 &:before {
                   position: absolute;
-                  font-size: 3.038vw;
+                  font-size: 24px;
                   top: 50%;
                   transform: translate(-50%, -50%);
                   font-family: "xeicon";
@@ -1575,12 +1607,13 @@
               }
             }
             .fintro-fourth {
+              position: relative;
               div {
-                position: relative;
                 border-bottom-right-radius: 0%;
+                position: relative;
                 &:before {
                   position: absolute;
-                  font-size: 3.038vw;
+                  font-size: 24px;
                   top: 50%;
                   transform: translate(-50%, -50%);
                   font-family: "xeicon";
@@ -1598,12 +1631,13 @@
               }
             }
             .fintro-fifth {
+              position: relative;
               div {
-                position: relative;
                 border-top-right-radius: 0%;
+                position: relative;
                 &:before {
                   position: absolute;
-                  font-size: 3.038vw;
+                  font-size: 24px;
                   top: 50%;
                   transform: translate(-50%, -50%);
                   font-family: "xeicon";

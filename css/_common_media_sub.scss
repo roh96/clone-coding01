@@ -47,87 +47,7 @@
               opacity: 0;
             }
           }
-          nav {
-            display: none;
-            /*margin-left: auto;
-            ul {
-              display: flex;
-              li {
-                padding: 0 40px;
-                font-size: 20px;
-                font-weight: bold;
-    
-                a {
-                  color: #fff;
-                  transition: 0.5;
-                }
-                &.companyli:hover > a {
-                  color: #faa61a;
-                }
-                &.companyli:hover .company {
-                  height: 230px;
-                  padding: 18px 30px;
-                }
-                &.serviceli:hover > a {
-                  color: #faa61a;
-                }
-                &.employli:hover > a {
-                  color: #faa61a;
-                }
-                &.employli:hover .employ {
-                  height: 130px;
-                  padding: 18px 30px;
-                }
-                &.companyli {
-                  position: relative;
-                  div.company {
-                    position: absolute;
-                    top: 40px;
-                    left: 40px;
-                    height: 0px;
-                    border-radius: 30px;
-                    border-top-left-radius: 0;
-                    background-color: #faa61a;
-                    padding: 0px 30px;
-                    flex-direction: column;
-                    overflow: hidden;
-                    transition: 0.5s;
-                    a {
-                      color: #fff;
-                      font-weight: 400;
-                      font-size: 1rem;
-                      white-space: nowrap;
-                      line-height: 3rem;
-                    }
-                  }
-                }
-                &.employli {
-                  position: relative;
-                  div.employ {
-                    position: absolute;
-                    top: 40px;
-                    left: 40px;
-                    height: 0px;
-                    border-radius: 30px;
-                    border-top-left-radius: 0;
-                    background-color: #faa61a;
-                    padding: 0px 30px;
-                    flex-direction: column;
-                    overflow: hidden;
-                    transition: 0.5s;
-                    a {
-                      color: #fff;
-                      font-weight: 400;
-                      font-size: 1rem;
-                      white-space: nowrap;
-                      line-height: 3rem;
-                    }
-                  }
-                }
-              }
-            }*/
-          }
-          .open-sitemap {
+          button.open-sitemap {
             width: 22px;
             margin-left: 150px;
             padding: 0;
@@ -137,80 +57,86 @@
               width: 100%;
             }
           }
-          .hammenu {
-            transition: 0.5s;
-            width: 40%;
-            height: 100vh;
-            background-color: #000;
-            top: 0%;
-            right: -40%;
-            position: fixed;
-            .hambox {
-              padding: 0;
-              width: 280px;
-              margin: 0 auto;
-              display: flex;
-              flex-direction: column;
-              .haminnerbox {
-                height: 100px;
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-                .burger {
-                  cursor: pointer;
-                  width: 35px;
-                  height: 25px;
-                  position: relative;
-                  span {
-                    position: absolute;
-                    width: 100%;
-                    border: 1px solid #000;
-                    height: 4px;
-                    background-color: rgb(124, 124, 125);
-                    border-radius: 4px;
-                    &:nth-child(1) {
-                      top: 2px;
-                    }
-                    &:nth-child(2) {
-                      top: 10px;
-                    }
-                    &:nth-child(3) {
-                      bottom: 2px;
-                    }
+        }
+        nav {
+          display: none;
+          /*margin-left: auto;
+          ul {
+            display: flex;
+            li {
+              padding: 0 40px;
+              font-size: 20px;
+              font-weight: bold;
+  
+              a {
+                color: #fff;
+                transition: 0.5;
+              }
+              &.companyli:hover > a {
+                color: #faa61a;
+              }
+              &.companyli:hover .company {
+                height: 230px;
+                padding: 18px 30px;
+              }
+              &.serviceli:hover > a {
+                color: #faa61a;
+              }
+              &.employli:hover > a {
+                color: #faa61a;
+              }
+              &.employli:hover .employ {
+                height: 130px;
+                padding: 18px 30px;
+              }
+              &.companyli {
+                position: relative;
+                div.company {
+                  position: absolute;
+                  top: 40px;
+                  left: 40px;
+                  height: 0px;
+                  border-radius: 30px;
+                  border-top-left-radius: 0;
+                  background-color: #faa61a;
+                  padding: 0px 30px;
+                  flex-direction: column;
+                  overflow: hidden;
+                  transition: 0.5s;
+                  a {
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    white-space: nowrap;
+                    line-height: 3rem;
                   }
                 }
               }
-              .burger-submenu {
-                width: 100%;
-                height: 150px;
-                .burger-submenus {
-                  padding: 30px 0;
+              &.employli {
+                position: relative;
+                div.employ {
+                  position: absolute;
+                  top: 40px;
+                  left: 40px;
+                  height: 0px;
+                  border-radius: 30px;
+                  border-top-left-radius: 0;
+                  background-color: #faa61a;
+                  padding: 0px 30px;
+                  flex-direction: column;
+                  overflow: hidden;
+                  transition: 0.5s;
                   a {
-                    font-size: 2rem;
-                    color: white;
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    white-space: nowrap;
+                    line-height: 3rem;
                   }
                 }
               }
             }
-          }
-          .burgeron {
-            transition: 0.5s;
-            right: 0%;
-            opacity: 1;
-            .hambox {
-              .burger-submenu {
-                width: 100%;
-                height: 150px;
-                .burger-submenus {
-                  padding: 30px 0;
-                  a {
-                    font-size: 2rem;
-                    color: white;
-                  }
-                }
-              }
-            }
-          }
+          }*/
         }
       }
     }
@@ -276,87 +202,7 @@
               opacity: 0;
             }
           }
-          nav {
-            display: none;
-            /*margin-left: auto;
-            ul {
-              display: flex;
-              li {
-                padding: 0 40px;
-                font-size: 20px;
-                font-weight: bold;
-    
-                a {
-                  color: #fff;
-                  transition: 0.5;
-                }
-                &.companyli:hover > a {
-                  color: #faa61a;
-                }
-                &.companyli:hover .company {
-                  height: 230px;
-                  padding: 18px 30px;
-                }
-                &.serviceli:hover > a {
-                  color: #faa61a;
-                }
-                &.employli:hover > a {
-                  color: #faa61a;
-                }
-                &.employli:hover .employ {
-                  height: 130px;
-                  padding: 18px 30px;
-                }
-                &.companyli {
-                  position: relative;
-                  div.company {
-                    position: absolute;
-                    top: 40px;
-                    left: 40px;
-                    height: 0px;
-                    border-radius: 30px;
-                    border-top-left-radius: 0;
-                    background-color: #faa61a;
-                    padding: 0px 30px;
-                    flex-direction: column;
-                    overflow: hidden;
-                    transition: 0.5s;
-                    a {
-                      color: #fff;
-                      font-weight: 400;
-                      font-size: 1rem;
-                      white-space: nowrap;
-                      line-height: 3rem;
-                    }
-                  }
-                }
-                &.employli {
-                  position: relative;
-                  div.employ {
-                    position: absolute;
-                    top: 40px;
-                    left: 40px;
-                    height: 0px;
-                    border-radius: 30px;
-                    border-top-left-radius: 0;
-                    background-color: #faa61a;
-                    padding: 0px 30px;
-                    flex-direction: column;
-                    overflow: hidden;
-                    transition: 0.5s;
-                    a {
-                      color: #fff;
-                      font-weight: 400;
-                      font-size: 1rem;
-                      white-space: nowrap;
-                      line-height: 3rem;
-                    }
-                  }
-                }
-              }
-            }*/
-          }
-          .open-sitemap {
+          button.open-sitemap {
             width: 22px;
             margin-left: 150px;
             padding: 0;
@@ -366,79 +212,86 @@
               width: 100%;
             }
           }
-          .hammenu {
-            transition: 0.5s;
-            width: 100%;
-            height: 100vh;
-            background-color: #000;
-            top: 0%;
-            right: -100%;
-            position: fixed;
-            .hambox {
-              padding: 0 100px;
-              width: auto;
-              margin: 0 auto;
-              display: flex;
-              flex-direction: column;
-              .haminnerbox {
-                height: 100px;
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-                .burger {
-                  cursor: pointer;
-                  width: 35px;
-                  height: 25px;
-                  position: relative;
-                  span {
-                    position: absolute;
-                    width: 100%;
-                    border: 1px solid #000;
-                    height: 4px;
-                    background-color: rgb(124, 124, 125);
-                    border-radius: 4px;
-                    &:nth-child(1) {
-                      top: 2px;
-                    }
-                    &:nth-child(2) {
-                      top: 10px;
-                    }
-                    &:nth-child(3) {
-                      bottom: 2px;
-                    }
+        }
+        nav {
+          display: none;
+          /*margin-left: auto;
+          ul {
+            display: flex;
+            li {
+              padding: 0 40px;
+              font-size: 20px;
+              font-weight: bold;
+  
+              a {
+                color: #fff;
+                transition: 0.5;
+              }
+              &.companyli:hover > a {
+                color: #faa61a;
+              }
+              &.companyli:hover .company {
+                height: 230px;
+                padding: 18px 30px;
+              }
+              &.serviceli:hover > a {
+                color: #faa61a;
+              }
+              &.employli:hover > a {
+                color: #faa61a;
+              }
+              &.employli:hover .employ {
+                height: 130px;
+                padding: 18px 30px;
+              }
+              &.companyli {
+                position: relative;
+                div.company {
+                  position: absolute;
+                  top: 40px;
+                  left: 40px;
+                  height: 0px;
+                  border-radius: 30px;
+                  border-top-left-radius: 0;
+                  background-color: #faa61a;
+                  padding: 0px 30px;
+                  flex-direction: column;
+                  overflow: hidden;
+                  transition: 0.5s;
+                  a {
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    white-space: nowrap;
+                    line-height: 3rem;
                   }
                 }
               }
-              .burger-submenu {
-                width: 100%;
-                height: 150px;
-                .burger-submenus {
-                  padding: 30px 0;
+              &.employli {
+                position: relative;
+                div.employ {
+                  position: absolute;
+                  top: 40px;
+                  left: 40px;
+                  height: 0px;
+                  border-radius: 30px;
+                  border-top-left-radius: 0;
+                  background-color: #faa61a;
+                  padding: 0px 30px;
+                  flex-direction: column;
+                  overflow: hidden;
+                  transition: 0.5s;
                   a {
-                    font-size: 2rem;
-                    color: white;
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    white-space: nowrap;
+                    line-height: 3rem;
                   }
                 }
               }
             }
-          }
-          .burgeron {
-            transition: 0.5s;
-            right: 0%;
-            .hambox {
-              .burger-submenu {
-                width: 100%;
-                height: 150px;
-                .burger-submenus {
-                  padding: 30px 0;
-                  a {
-                    font-size: 2rem;
-                    color: white;
-                  }
-                }
-              }
-            }
-          }
+          }*/
         }
       }
     }
@@ -542,349 +395,6 @@
       }
       > div.up-tool {
         > div.xi-arrow-up {
-        }
-      }
-    }
-  }
-}
-
-//360~540
-@include device($mobile2, $mobile) {
-  //mobile
-  body {
-    header {
-      width: 100%;
-      margin: 0 auto;
-      padding: 0 5%;
-      position: fixed;
-      top: 0%;
-      left: 0%;
-      background-color: #fff;
-      border-bottom: 1px solid #272727;
-      z-index: 999;
-      .header-container {
-        width: 100%;
-        padding-top: 0px;
-        .header-main-container {
-          padding: 0;
-          width: 100%;
-          height: 80px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          max-width: 1720px;
-          margin: 0 auto;
-          h1 {
-            position: relative;
-            a.frontsvg {
-              width: 180px;
-              height: 37px;
-              img {
-                width: 100%;
-              }
-            }
-            .white {
-              position: absolute;
-              left: 0%;
-              width: 255px;
-              height: 53px;
-              opacity: 0;
-            }
-            .black {
-              opacity: 1;
-            }
-          }
-          nav {
-            display: none;
-            margin-left: auto;
-            ul {
-              display: flex;
-              li {
-                padding: 0 40px;
-                font-size: 20px;
-                font-weight: bold;
-
-                a {
-                  color: #000;
-                  transition: 0.5;
-                }
-                &.companyli:hover > a {
-                  color: #faa61a;
-                }
-                &.companyli:hover .company {
-                  height: 230px;
-                  padding: 18px 30px;
-                }
-                &.serviceli:hover > a {
-                  color: #faa61a;
-                }
-                &.employli:hover > a {
-                  color: #faa61a;
-                }
-                &.employli:hover .employ {
-                  height: 130px;
-                  padding: 18px 30px;
-                }
-                &.companyli {
-                  position: relative;
-                  div.company {
-                    position: absolute;
-                    top: 40px;
-                    left: 40px;
-                    height: 0px;
-                    border-radius: 30px;
-                    border-top-left-radius: 0;
-                    background-color: #faa61a;
-                    padding: 0px 30px;
-                    flex-direction: column;
-                    overflow: hidden;
-                    transition: 0.5s;
-                    a {
-                      color: #fff;
-                      font-weight: 400;
-                      font-size: 1rem;
-                      white-space: nowrap;
-                      line-height: 3rem;
-                    }
-                  }
-                }
-                &.employli {
-                  position: relative;
-                  div.employ {
-                    position: absolute;
-                    top: 40px;
-                    left: 40px;
-                    height: 0px;
-                    border-radius: 30px;
-                    border-top-left-radius: 0;
-                    background-color: #faa61a;
-                    padding: 0px 30px;
-                    flex-direction: column;
-                    overflow: hidden;
-                    transition: 0.5s;
-                    a {
-                      color: #fff;
-                      font-weight: 400;
-                      font-size: 1rem;
-                      white-space: nowrap;
-                      line-height: 3rem;
-                    }
-                  }
-                }
-              }
-            }
-          }
-          .open-sitemap {
-            width: 22px;
-            margin-left: 50px;
-            padding: 0;
-            background-color: transparent;
-            border: none;
-            img {
-              width: 100%;
-            }
-          }
-          .hammenu {
-            transition: 0.5s;
-            width: 100%;
-            height: 100vh;
-            background-color: #000;
-            top: 0%;
-            right: -100%;
-            position: fixed;
-            .hambox {
-              padding: 0 70px;
-              width: auto;
-              margin: 0 auto;
-              display: flex;
-              flex-direction: column;
-              .haminnerbox {
-                height: 100px;
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-                .burger {
-                  cursor: pointer;
-                  width: 35px;
-                  height: 25px;
-                  position: relative;
-                  span {
-                    position: absolute;
-                    width: 100%;
-                    border: 1px solid #000;
-                    height: 4px;
-                    background-color: rgb(124, 124, 125);
-                    border-radius: 4px;
-                    &:nth-child(1) {
-                      top: 2px;
-                    }
-                    &:nth-child(2) {
-                      top: 10px;
-                    }
-                    &:nth-child(3) {
-                      bottom: 2px;
-                    }
-                  }
-                }
-              }
-              .burger-submenu {
-                width: 100%;
-                height: 150px;
-                .burger-submenus {
-                  padding: 30px 0;
-                  a {
-                    font-size: 2rem;
-                    color: white;
-                  }
-                }
-              }
-            }
-          }
-          .burgeron {
-            transition: 0.5s;
-            right: 0%;
-            .hambox {
-              .burger-submenu {
-                width: 100%;
-                height: 150px;
-                .burger-submenus {
-                  padding: 30px 0;
-                  a {
-                    font-size: 2rem;
-                    color: white;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    footer {
-      width: 100%;
-      //margin: 0 auto;
-      padding: 0;
-      background-color: #272727;
-      color: #222222;
-      position: relative;
-      > div.footer-container {
-        padding: 0 5%;
-        flex-direction: column;
-        > div.left-container {
-          width: 100%;
-          position: relative;
-          font-size: 13px;
-          > div:first-child {
-            display: none;
-
-            width: 175px;
-          }
-          > ul {
-            display: none;
-
-            position: absolute;
-            top: 0;
-            right: 0;
-            text-align: bottom right;
-            > li {
-              padding-right: 0;
-              padding-top: 20px;
-              padding-left: 25px;
-              font-weight: inherit;
-            }
-          }
-          > div.adr {
-            display: none;
-
-            padding-top: 50px;
-            > span {
-              display: inline-block;
-              color: #7c7c7c;
-              padding-top: 5px;
-              padding-right: 15px;
-              &:first-child {
-                display: block;
-                width: 100%;
-                padding-top: 0px;
-              }
-              > em {
-                font-style: normal;
-                color: #fff;
-              }
-            }
-          }
-          > div.tel {
-            display: none;
-            padding-top: 20px;
-            > span {
-              display: block;
-              &:last-child {
-                padding-top: 5px;
-              }
-            }
-          }
-          > div.copy {
-            text-align: center;
-            padding: 30px;
-          }
-        }
-        > div.right-container {
-          display: none;
-          > div.right-top-container {
-            display: none;
-            > ul {
-              > li {
-              }
-            }
-          }
-          > div.right-bottom-container {
-            padding-top: 30px;
-            justify-content: flex-start;
-            > a.right-bottom-icon {
-              padding-right: 15px;
-            }
-            > div.right-bottom-site {
-              font-size: 13px;
-              padding: 15px 25px 15px 25px;
-              > div.arrow-box {
-                > div.arrow-text {
-                  padding-right: 10px;
-                }
-                > div.arrow {
-                  width: 6px;
-                  height: 6px;
-                  border-left: 1px solid #fff;
-                  border-top: 1px solid #fff;
-                  //font-family: "xeicon";
-                }
-                > div.gotosite {
-                  > a {
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      > div.up-tool {
-        position: absolute;
-        width: 46px;
-        height: 46px;
-        border-radius: 50%;
-        background-color: #fff;
-        top: 100%;
-        right: 1.3%;
-        &.on {
-          position: fixed;
-          top: 92%;
-          transition: 1s;
-        }
-        > div.xi-arrow-up {
-          position: absolute;
-          top: 35%;
-          left: 33%;
-          transition: 0.4s;
         }
       }
     }
